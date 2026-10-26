@@ -29,8 +29,8 @@ export default function PowerBank({ idPrefix = 'pb', region = 'us', primary = fa
   return (
     <div data-chrome className={`not-prose rounded-xl border border-accent-200 bg-white p-4 sm:p-5 ${primary ? 'my-2' : 'my-8'}`}>
       <p className="text-base font-semibold text-navy-900">Can this power bank fly?</p>
-      <div className="mt-3 grid gap-5 sm:grid-cols-2">
-        <form className="grid content-start gap-3" onSubmit={(e) => e.preventDefault()} {...(primary ? {} : { 'data-simulateur-secondaire': '' })}>
+      <div className="mt-3 grid grid-cols-1 gap-5 sm:grid-cols-2">
+        <form className="grid min-w-0 grid-cols-1 content-start gap-3" onSubmit={(e) => e.preventDefault()} {...(primary ? {} : { 'data-simulateur-secondaire': '' })}>
           <NumberField id={p('mah')} label="Capacity printed on it" value={mah} onChange={setMah} unit="mAh" max={200000} tag="en-US" />
           <div className="grid grid-cols-2 gap-3">
             <NumberField id={p('v')} label="Voltage" value={v} onChange={setV} unit="V" max={60} decimals={2} help="3.7 V for most packs" tag="en-US" />

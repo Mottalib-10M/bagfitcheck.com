@@ -47,9 +47,9 @@ export default function FitCheck({ idPrefix = 'fit', mode = 'carry', region = 'a
   return (
     <div data-chrome className={`not-prose rounded-xl border border-accent-200 bg-white p-4 sm:p-5 ${primary ? 'my-2' : 'my-8'}`}>
       <p className="text-base font-semibold text-navy-900">Will my bag fit? Your bag against {rows.length} airlines</p>
-      <div className="mt-3 grid gap-5 lg:grid-cols-2">
-        <form className="grid content-start gap-3" onSubmit={(e) => e.preventDefault()} {...(primary ? {} : { 'data-simulateur-secondaire': '' })}>
-          <div className="grid gap-3 sm:grid-cols-2">
+      <div className="mt-3 grid grid-cols-1 gap-5 lg:grid-cols-2">
+        <form className="grid min-w-0 grid-cols-1 content-start gap-3" onSubmit={(e) => e.preventDefault()} {...(primary ? {} : { 'data-simulateur-secondaire': '' })}>
+          <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
             <SelectField id={p('cat')} label="Check it as a" value={cat} onChange={(x) => setCat(x as Cat)} options={(['personal', 'carry', 'checked'] as Cat[]).map((c) => ({ value: c, label: CAT_LABEL[c] }))} />
             <Toggle id={p('unit')} label="Units" value={u} onChange={(x) => switchUnit(x as 'in' | 'cm')} options={[{ value: 'in', label: 'in / lb' }, { value: 'cm', label: 'cm / kg' }]} />
           </div>
@@ -58,7 +58,7 @@ export default function FitCheck({ idPrefix = 'fit', mode = 'carry', region = 'a
             <NumberField id={p('w')} label="Width" value={w} onChange={setW} unit={u} max={u === 'cm' ? 300 : 120} decimals={1} tag="en-US" />
             <NumberField id={p('h')} label="Depth" value={h} onChange={setH} unit={u} max={u === 'cm' ? 300 : 120} decimals={1} tag="en-US" />
           </div>
-          <div className="grid gap-3 sm:grid-cols-2">
+          <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
             <NumberField id={p('wt')} label="Weight (0 if not weighed)" value={wt} onChange={setWt} unit={wUnit} max={u === 'cm' ? 100 : 220} decimals={1} tag="en-US" />
             <SelectField id={p('reg')} label="Airlines" value={reg} onChange={(x) => setReg(x as Region | 'all')} options={[{ value: 'all', label: 'US, UK and Europe' }, { value: 'us', label: 'US airlines' }, { value: 'uk', label: 'UK and Europe airlines' }]} />
           </div>

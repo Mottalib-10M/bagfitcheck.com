@@ -27,7 +27,7 @@ export default function NumberField({ id, label, value, onChange, unit = '', min
   const handleBlur = useCallback(() => {
     guardMouseUp.current = false; setFocused(false); if (value < min) onChange(min); if (value > max) onChange(max); }, [value, min, max, onChange]);
   return (
-    <div className={`grid grid-rows-subgrid row-span-3 content-start gap-y-0 ${className}`}>
+    <div className={`grid min-w-0 grid-rows-subgrid row-span-3 content-start gap-y-0 ${className}`}>
       <label htmlFor={id} className="mb-1 block text-sm font-medium text-navy-700">{label}</label>
       <div className="relative self-start">
         <input ref={input} id={id} onMouseUp={(e) => { if (guardMouseUp.current) { guardMouseUp.current = false; e.preventDefault(); } }} type="text" inputMode="decimal" value={display} onChange={handleChange} onFocus={handleFocus} onBlur={handleBlur} placeholder="0" aria-describedby={help || over ? `${id}-help` : undefined}

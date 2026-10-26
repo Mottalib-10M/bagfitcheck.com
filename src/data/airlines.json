@@ -69,8 +69,20 @@
     }
    ],
    "oversize": {
-    "fromLinearIn": 66,
-    "fee": 200
+    "fromLinearIn": 63,
+    "fee": 200,
+    "bands": [
+     {
+      "fromLinearIn": 63,
+      "toLinearIn": 65,
+      "fee": 30
+     },
+     {
+      "fromLinearIn": 66,
+      "toLinearIn": 115,
+      "fee": 200
+     }
+    ]
    },
    "perks": {
     "card": "Airline co-branded credit card: first checked bag free for eligible cardholders on domestic American-operated itineraries (AAdvantage number must be in the reservation). Number of companions covered is not stated on this page.",
@@ -1123,7 +1135,7 @@
      "channel": "airport"
     },
     {
-     "item": "Flight-only checked bag (15kg), Cape Verde/Egypt/Gambia/Senegal/long-haul",
+     "item": "Flight-only checked bag (15kg), Cape Verde, Egypt, Gambia, Senegal or long-haul",
      "min": 80,
      "max": 80,
      "channel": "airport"

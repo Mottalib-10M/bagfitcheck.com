@@ -32,21 +32,21 @@ export default function FeeCalc({ idPrefix = 'fee', airline: a0 = 'united', bags
   return (
     <div data-chrome className={`not-prose rounded-xl border border-accent-200 bg-white p-4 sm:p-5 ${primary ? 'my-2' : 'my-8'}`}>
       <p className="text-base font-semibold text-navy-900">Bag fees for your trip</p>
-      <div className="mt-3 grid gap-5 lg:grid-cols-2">
-        <form className="grid content-start gap-3" onSubmit={(e) => e.preventDefault()} {...(primary ? {} : { 'data-simulateur-secondaire': '' })}>
-          <div className="grid gap-3 sm:grid-cols-2">
+      <div className="mt-3 grid grid-cols-1 gap-5 lg:grid-cols-2">
+        <form className="grid min-w-0 grid-cols-1 content-start gap-3" onSubmit={(e) => e.preventDefault()} {...(primary ? {} : { 'data-simulateur-secondaire': '' })}>
+          <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
             <SelectField id={p('al')} label="Airline" value={id} onChange={(x) => { setId(x); setPerk('none'); }} options={list.map((x) => ({ value: x.id, label: x.unconfirmed ? `${x.name} (archived figures)` : x.name }))} />
             <NumberField id={p('bags')} label="Checked bags per traveler" value={bags} onChange={(x) => setBags(Math.min(3, Math.round(x)))} max={3} tag="en-US" />
           </div>
-          <div className="grid gap-3 sm:grid-cols-2">
+          <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
             <Toggle id={p('carry')} label="Taking a carry-on?" value={carry} onChange={setCarry} options={[{ value: '1', label: 'Yes' }, { value: '0', label: 'No' }]} />
             <Toggle id={p('basic')} label="Basic or lowest fare?" value={basic} onChange={setBasic} options={[{ value: '1', label: 'Yes' }, { value: '0', label: 'No' }]} />
           </div>
-          <div className="grid gap-3 sm:grid-cols-2">
+          <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
             <Toggle id={p('ch')} label="Pay for bags" value={ch} onChange={(x) => setCh(x as Channel)} options={[{ value: 'online', label: 'Online' }, { value: 'airport', label: 'Airport' }]} />
             <SelectField id={p('perk')} label="Free-bag benefit" value={perk} onChange={(x) => setPerk(x as Perk)} options={perks} />
           </div>
-          <div className="grid gap-3 sm:grid-cols-2">
+          <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
             <NumberField id={p('trav')} label="Travelers" value={trav} onChange={(x) => setTrav(Math.max(1, Math.min(9, Math.round(x))))} max={9} tag="en-US" />
             <Toggle id={p('rt')} label="Trip" value={rt} onChange={setRt} options={[{ value: '1', label: 'Round trip' }, { value: '0', label: 'One way' }]} />
           </div>

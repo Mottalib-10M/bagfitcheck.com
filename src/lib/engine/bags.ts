@@ -34,7 +34,7 @@ export interface Airline {
   range?: { item: string; min: number; max: number; channel?: string }[] | null;
   dynamic: boolean;
   overweight?: Array<{ fromLb: number; toLb: number; fee: number }> | null;
-  oversize?: { fromLinearIn: number; fee: number } | null;
+  oversize?: { fromLinearIn: number; fee: number; bands?: Array<{ fromLinearIn: number; toLinearIn: number; fee: number }> } | null;
   perks?: { card?: string; cardBags?: number; status?: string; statusBags?: number; military?: string; militaryBags?: number } | null;
   /** Lowest fares that pay more per bag (American Basic Economy from May 18, 2026). */
   basicFees?: { first?: Fee | null; second?: Fee | null; from?: string } | null;
@@ -153,7 +153,9 @@ export function excessFee(id: string, lb: number, linIn: number) {
   for (const b of a.overweight ?? []) if (lb >= b.fromLb && lb <= b.toLb) w = b.fee;
   const maxW = Math.max(0, ...(a.overweight ?? []).map((b) => b.toLb));
   const refused = (a.overweight?.length ?? 0) > 0 && lb > maxW;
-  const s = a.oversize && linIn >= a.oversize.fromLinearIn ? a.oversize.fee : 0;
+  const o = a.oversize;
+  const band = o?.bands?.find((b) => linIn >= b.fromLinearIn && linIn < b.toLinearIn + 1);
+  const s = !o || linIn < o.fromLinearIn ? 0 : band ? band.fee : o.bands ? o.bands[o.bands.length - 1].fee : o.fee;
   return { weight: w, size: s, refused, cur: a.currency };
 }
 

@@ -60,7 +60,7 @@ export default function MiniSimAutonome({ kind, lang = 'en', href, locale = 'en-
   return (
     <div data-chrome data-mini={kind} className="not-prose rechner-mini my-8 rounded-xl border bg-white p-4 shadow-sm sm:p-5" style={{ borderColor: C.border }}>
       <p className="text-base font-semibold" style={{ color: C.text }}>{spec.title}</p>
-      <div className="mt-3 grid gap-5 sm:grid-cols-2">
+      <div className="mt-3 grid grid-cols-1 gap-5 sm:grid-cols-2">
         <form className="space-y-3" onSubmit={(e) => e.preventDefault()}>
           {spec.inputs.map((i) => i.options
             ? <div key={i.id}><label htmlFor={`m-${kind}-${i.id}`} className="mb-1 block text-sm font-medium" style={{ color: C.text }}>{i.label}</label>

@@ -644,6 +644,26 @@
    "id": "ap-mme",
    "url": "https://www.teessideinternational.com/at-the-airport/preparing-for-security/",
    "quote": "All liquids, gels and creams in hand luggage must be in containers of up to 100ml. Liquids in your hand luggage do not need to be placed in a plastic bag and do not need to be taken out of your bags prior to screening. There is no specified limit to the number of 100ml liquid containers that may be carried."
+  },
+  {
+   "id": "tsa-food-solid",
+   "url": "https://www.tsa.gov/travel/security-screening/whatcanibring/food",
+   "quote": "Solid food items (not liquids or gels) can be transported in either your carry-on or checked bags."
+  },
+  {
+   "id": "tsa-peanut-butter",
+   "url": "https://www.tsa.gov/travel/security-screening/whatcanibring/items/peanut-butter",
+   "quote": "Carry On Bags: Yes (Less than or equal to 3.4oz/100 ml allowed)"
+  },
+  {
+   "id": "faa-short-circuit",
+   "url": "https://www.faa.gov/hazmat/packsafe/lithium-batteries",
+   "quote": "The battery terminals must be protected from short circuit."
+  },
+  {
+   "id": "american-oversize-bands",
+   "url": "https://www.aa.com/i18n/travel-info/baggage/oversize-and-overweight-baggage.jsp",
+   "quote": "Over 62 in / 158 cm – 65 in / 165 cm Over 65 in / 165 cm – 115 in / 292 cm Between U.S., Puerto Rico, U.S. Virgin Islands and Canada $30 $200"
   }
  ]
 }

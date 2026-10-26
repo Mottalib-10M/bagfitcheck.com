@@ -1,7 +1,7 @@
 interface Props { id: string; label: string; options: Array<{ value: string; label: string }>; value: string; onChange: (v: string) => void; className?: string }
 export default function Toggle({ id, label, options, value, onChange, className = '' }: Props) {
   return (
-    <div className={`grid grid-rows-subgrid row-span-3 content-start gap-y-0 ${className}`} role="group" aria-labelledby={`${id}-label`}>
+    <div className={`grid min-w-0 grid-rows-subgrid row-span-3 content-start gap-y-0 ${className}`} role="group" aria-labelledby={`${id}-label`}>
       <span id={`${id}-label`} className="mb-1 block text-sm font-medium text-navy-700">{label}</span>
       <div className="grid h-12 w-fit min-w-[9rem] grid-flow-col auto-cols-fr gap-1 self-start rounded-lg border border-navy-300 bg-white p-1">
         {options.map((o) => (

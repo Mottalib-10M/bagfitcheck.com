@@ -22,8 +22,8 @@ export default function MiniSim({ kind, href, defaults = {}, primary = false, id
   return (
     <div data-chrome data-mini={kind} className={`not-prose rechner-mini rounded-xl border border-accent-200 bg-white p-4 sm:p-5 ${primary ? 'my-2' : 'my-8'}`}>
       <p className="text-base font-semibold text-navy-900">{spec.title}</p>
-      <div className="mt-3 grid gap-5 sm:grid-cols-2">
-        <form className="grid content-start gap-3" onSubmit={(e) => e.preventDefault()} {...(primary ? {} : { 'data-simulateur-secondaire': '' })}>
+      <div className="mt-3 grid grid-cols-1 gap-5 sm:grid-cols-2">
+        <form className="grid min-w-0 grid-cols-1 content-start gap-3" onSubmit={(e) => e.preventDefault()} {...(primary ? {} : { 'data-simulateur-secondaire': '' })}>
           {spec.inputs.map((i) => i.date
             ? <div key={i.id} className="grid min-w-0 grid-rows-subgrid row-span-3 content-start gap-y-0"><label htmlFor={fid(i.id)} className="mb-1 block text-sm font-medium text-navy-700">{i.label}</label><input id={fid(i.id)} type="date" value={isoOf(v[i.id])} onChange={(e) => { if (/^\d{4}-\d{2}-\d{2}$/.test(e.target.value)) set(i.id)(dayNum(e.target.value)); }} className={inputCls} />{i.help ? <p className="mt-1 text-xs text-navy-500">{i.help}</p> : <span />}</div>
             : i.options
