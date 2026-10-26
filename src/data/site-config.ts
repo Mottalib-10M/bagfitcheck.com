@@ -1,6 +1,6 @@
 /** Configuration centrale du site (générée par new-site.py). */
-export const SITE_URL = "https://us-uk-baggage.example";
-export const SITE_NAMES: Record<string, string> = {"en": "US UK Baggage"};
+export const SITE_URL = "https://bagfitcheck.com";
+export const SITE_NAMES: Record<string, string> = {"en": "Bag Fit Check"};
 // Partie du nom affichée en couleur dans l'en-tête (RECETTE §10.3), « » pour aucune.
 export const BRAND_ACCENT = "";
 export const LANG_TAGS: Record<string, string> = {"en": "en-US"};
@@ -18,7 +18,7 @@ export const AUTHOR_DESC: Record<string, string> = {"en": "Radif Partners reads 
  *  themes reellement traites par le site, pas une liste de mots-cles : un sujet
  *  declare ici sans page qui le couvre est une declaration fausse. */
 export const KNOWS_ABOUT: Record<string, string[]> = {"en": ["Carry-on and personal item size limits of US airlines", "Checked baggage fees of US airlines", "Cabin bag and hold luggage rules of UK and European low-cost airlines", "TSA 3-1-1 liquids rule", "UK airport liquid rules and next-generation security scanners", "Lithium batteries and power banks in aircraft cabins"]};
-export const CONTACT_EMAIL = "contact@us-uk-baggage.example";
+export const CONTACT_EMAIL = "contact@bagfitcheck.com";
 export const THEME_COLOR = '#1D4E6B';
 export const LOGO_SYMBOL = 'BAG';
 export const BING_VERIFY_CODE = '';

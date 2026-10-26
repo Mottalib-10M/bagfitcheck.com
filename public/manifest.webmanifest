@@ -1,6 +1,6 @@
 {
- "name": "US UK Baggage",
- "short_name": "US UK Baggage",
+ "name": "Bag Fit Check",
+ "short_name": "Bag Fit Check",
  "description": "Measure your bag once and see which airlines accept it as a personal item, carry-on or checked bag, what a round trip costs in bag fees, and the TSA and UK liquid rules.",
  "start_url": "/en/",
  "display": "standalone",
