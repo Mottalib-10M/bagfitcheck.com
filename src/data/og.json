@@ -1,0 +1,13 @@
+{
+ "accent": "#1D4E6B",
+ "symbol": "BAG",
+ "variants": [
+  {
+   "file": "og-en.png",
+   "title": "Will my bag fit?\n17 airlines in one check",
+   "subtitle": "Personal item · carry-on · checked bag fees, round trip",
+   "badge": "Sizes and fees read on each airline's own page",
+   "brand": "US UK Baggage"
+  }
+ ]
+}

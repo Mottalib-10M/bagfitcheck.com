@@ -1,0 +1,7 @@
+node_modules
+dist
+.astro
+scripts/__pycache__
+# Copies de travail des pages des compagnies et des textes officiels : jamais versionnées (RECETTE §12.1)
+data/raw/
+data/textes-sources/*.txt

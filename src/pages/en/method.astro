@@ -1,0 +1,40 @@
+---
+import PageLayout from '../../layouts/PageLayout.astro';
+import { LAST_UPDATED } from '../../data/site-config';
+import { route } from '../../i18n/routes';
+import { breadcrumbSchema, articleSchema } from '../../lib/seo';
+import { helpers } from '../../lib/helpers';
+import { displayDate } from '../../lib/format';
+import { AIRLINES } from '../../lib/engine/bags';
+const lang = 'en';
+const h = helpers(lang);
+const B = h.P.rules.batteries, T = h.P.rules.tsa, U = h.P.rules.uk;
+const wayback = AIRLINES.filter((a) => a.via === 'wayback');
+const rows = AIRLINES.map((a) => [a.name, a.region === 'us' ? 'US' : 'UK / Europe', a.dynamic ? 'per flight' : 'fixed table', h.date(a.readOn) + (a.via === 'wayback' ? ' (archived copy)' : '')]);
+---
+<PageLayout title="Method of US UK Baggage: how bags are tested, fees added" description="How US UK Baggage tests your bag against each airline's size and weight limits, adds up round-trip bag fees and reads TSA, UK airport and battery rules." lang={lang} jsonLd={[articleSchema({ title: 'How a bag is tested and how fees are added up', description: 'Method of US UK Baggage', path: route('method', lang), lang }), breadcrumbSchema([{ name: 'Home', path: route('home', lang) }, { name: 'Method', path: route('method', lang) }])]} breadcrumbs={[{ label: 'Method' }]}>
+  <header class="mb-6"><p class="kicker">Method</p><h1 class="mt-0 text-3xl font-bold text-navy-900 md:text-4xl">How a bag is tested and how fees are added up</h1></header>
+  <div class="prose prose-slate max-w-none">
+    <p>Every tool and every page reads two data files: one record per airline (sizes, weights, fees, free-bag benefits, the pages they were read on and the date), and one file of security and battery rules. No size or fee is typed into a page; when an airline changes a figure, the record changes and every page follows. Automated tests run each calculation on cases worked out by hand from the airline's own figures.</p>
+    <h2>1. Does the bag fit?</h2>
+    <p>Airlines publish a maximum length, width and depth, measured with wheels and handles. The checker sorts your three sides from longest to shortest and compares them with the airline's three sides sorted the same way: a bag that fits when turned on its side is counted as fitting, which is how a bag goes into a sizer. When an airline publishes a total of linear inches (the three sides added), the sum is compared instead. A difference under 0.05 inch (about 1 mm) is ignored, because airlines round their own conversions between inches and centimetres. Weight is compared only when the airline publishes a weight limit and you enter one. The answer gives the side that is over and by how much.</p>
+    <p>US airlines publish inches; UK and European airlines publish centimetres. The checker converts at exactly 2.54 cm to the inch and 0.45359237 kg to the pound, and it always compares with the unit the airline itself published.</p>
+    <h2>2. Round-trip fees</h2>
+    <p>For airlines with a fixed fee table, the calculator takes the first, second and third checked bag fees each way, the online or airport price where they differ, adds a carry-on fee where the fare does not include one, then multiplies by the number of travelers and by two for a round trip. A co-branded credit card removes the number of free bags the airline states for the cardholder; elite status and active-duty military remove the bags the airline lists for them, and the page says which tiers count. Overweight and oversize charges are added only in the dedicated tool, from each airline's published bands.</p>
+    <p>Several airlines price bags per flight: the fee depends on the route, the date and when you buy. For them the site shows only the range or the starting price the airline itself publishes, and says that the exact price appears in the booking before you pay. It never invents an average.</p>
+    <h2>3. Liquids and batteries</h2>
+    <p>US checkpoints: the TSA rule of {h.num(T.oz, 1)} ounces ({T.ml} ml) per container in one {T.bag}. UK airports: the GOV.UK rule of {U.ml} ml containers, and the larger allowance only at the airports whose own security page states it, each with the date read. Power banks: watt-hours = mAh × volts ÷ 1,000; up to {B.noApprovalWh} Wh in carry-on, {B.noApprovalWh + 1} to {B.approvalWh} Wh only with the airline's approval (at most {B.approvalMaxSpares} spares), never in checked bags, as stated by the FAA and the CAA.</p>
+    <h2>4. Airlines and reading dates</h2>
+    <Fragment set:html={h.table(['Airline', 'Market', 'Bag fees', 'Read on'], rows, 'Each record links to the airline pages it was read on, on that airline’s page of this site.', ['l', 'l', 'l', 'l'])} />
+    {wayback.length > 0 && <p>For {wayback.map((a) => a.name).join(', ')}, the airline's server refused automated reading on the day of the check; the figures were read on the latest archived copy of the same airline page kept by the Internet Archive, and the airline's page on this site gives the capture date.</p>}
+    <h2>5. Updates</h2>
+    <p>A script (scripts/update-data.py) opens each airline page again and reports any page whose text no longer contains the figures on file, so that a person reads the change before the data file is edited. It is meant to run every month once the site is online; until then it is run by hand. Announced changes are shown with their start date.</p>
+    <h2>6. What the site does not do</h2>
+    <ul>
+      <li>It does not promise that a gate agent will accept a bag: sizers, aircraft and crowded flights differ.</li>
+      <li>It does not sell bags, book flights or add bags to a booking.</li>
+      <li>It does not keep anything you type: the tools run in your browser.</li>
+    </ul>
+    <p>Method version of <time datetime={LAST_UPDATED}>{displayDate(LAST_UPDATED, 'en-US')}</time>. A figure that looks wrong: <a href={route('contact', lang)}>contact</a>.</p>
+  </div>
+</PageLayout>

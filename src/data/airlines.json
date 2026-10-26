@@ -1,0 +1,1201 @@
+{
+ "_lisezmoi": "One record per airline. Every size, weight and fee read on the airline page listed in sources (see params-2026.json), on readOn; via = wayback when the Internet Archive copy of the airline page was read. Inches for US airlines, centimetres for UK and European airlines, as published.",
+ "airlines": [
+  {
+   "id": "american",
+   "name": "American Airlines",
+   "region": "us",
+   "currency": "USD",
+   "personal": {
+    "in": [
+     18,
+     14,
+     8
+    ],
+    "lb": null,
+    "note": "Must fit under the seat in front of you. No weight limit stated."
+   },
+   "carry": {
+    "in": [
+     22,
+     14,
+     9
+    ],
+    "cm": [
+     56,
+     36,
+     23
+    ],
+    "note": "The carry-on page states 1 personal item and 1 carry-on with no Basic Economy exception; no carry-on weight limit stated. American Eagle regional jets: larger bags are valet-checked free at the gate."
+   },
+   "checked": {
+    "linearIn": 62,
+    "lb": 50,
+    "note": "domestic US (within/between U.S. incl. HI/AK, Puerto Rico, USVI), Main Cabin; online = paid on aa.com/app up to 2 h before departure"
+   },
+   "carryIncluded": "all",
+   "carryFee": null,
+   "fees": {
+    "first": {
+     "online": 45,
+     "airport": 50
+    },
+    "second": {
+     "online": 55,
+     "airport": 60
+    },
+    "third": {
+     "online": 200,
+     "airport": 200
+    }
+   },
+   "range": null,
+   "dynamic": false,
+   "overweight": [
+    {
+     "fromLb": 51,
+     "toLb": 53,
+     "fee": 30
+    },
+    {
+     "fromLb": 54,
+     "toLb": 70,
+     "fee": 100
+    },
+    {
+     "fromLb": 71,
+     "toLb": 100,
+     "fee": 200
+    }
+   ],
+   "oversize": {
+    "fromLinearIn": 66,
+    "fee": 200
+   },
+   "perks": {
+    "card": "Airline co-branded credit card: first checked bag free for eligible cardholders on domestic American-operated itineraries (AAdvantage number must be in the reservation). Number of companions covered is not stated on this page.",
+    "status": "AAdvantage Gold / oneworld Ruby: 1st bag free; Platinum / oneworld Sapphire: first 2 bags free; Executive Platinum, Platinum Pro / oneworld Emerald: first 3 bags free.",
+    "military": "Active U.S. military with ID on personal travel: first 3 checked bags free; on orders (and dependents): 1st-5th bags free.",
+    "cardBags": 1,
+    "statusBags": 1,
+    "militaryBags": 3
+   },
+   "changes": "Main Cabin domestic 1st bag $40 -> $50 ($45 online) and 2nd bag $50 -> $60 ($55 online) for tickets issued on/after April 9, 2026; 3rd bag $150 -> $200 from April 9, 2026; Basic Economy pays $5 more (1st $55/$50 online, 2nd $65/$60 online) for tickets issued on/after May 18, 2026.",
+   "notes": "aa.com returned HTTP 403 to automated requests; read from Wayback captures (checked/carry-on 2026-07-13, oversize/overweight 2026-02-28 — the latter page said fees updated Feb 20, 2024 for travel on/after April 17, 2024). Overweight/oversize 'from/to' bounds are our integer reading of 'over 50-53 lbs' etc.",
+   "sources": [
+    "american-carryon",
+    "american-checked",
+    "american-over"
+   ],
+   "readOn": "2026-07-13",
+   "via": "wayback",
+   "basicFees": {
+    "first": {
+     "online": 50,
+     "airport": 55
+    },
+    "second": {
+     "online": 60,
+     "airport": 65
+    },
+    "from": "2026-05-18"
+   }
+  },
+  {
+   "id": "delta",
+   "name": "Delta Air Lines",
+   "region": "us",
+   "currency": "USD",
+   "personal": null,
+   "carry": {
+    "in": [
+     22,
+     14,
+     9
+    ],
+    "cm": [
+     56,
+     35,
+     23
+    ],
+    "linearIn": 45,
+    "note": "1 carry-on + 1 personal item free for every passenger (Delta Main Basic included). Delta Connection flights with 50 seats or less: personal items only on board, larger bags gate-checked free. No weight limit stated."
+   },
+   "checked": {
+    "linearIn": 62,
+    "lb": 50,
+    "note": "domestic US, Delta Comfort and Delta Main (no online/airport price difference published)"
+   },
+   "carryIncluded": "all",
+   "carryFee": null,
+   "fees": {
+    "first": {
+     "online": 45,
+     "airport": 45
+    },
+    "second": {
+     "online": 55,
+     "airport": 55
+    },
+    "third": {
+     "online": 200,
+     "airport": 200
+    }
+   },
+   "range": null,
+   "dynamic": false,
+   "overweight": [
+    {
+     "fromLb": 51,
+     "toLb": 70,
+     "fee": 100
+    },
+    {
+     "fromLb": 71,
+     "toLb": 99,
+     "fee": 200
+    }
+   ],
+   "oversize": {
+    "fromLinearIn": 63,
+    "fee": 200
+   },
+   "perks": {
+    "card": "Airline co-branded credit card: first checked bag free for the cardholder and up to 8 companions on the same reservation (when the flight is booked with the card); the basic cardmember also gets a second checked bag free on domestic Delta-operated flights.",
+    "status": "Medallion members (any tier) and SkyTeam Elite/Elite Plus: first checked bag fee waived, extended to up to 8 companions on the reservation; more bags depending on tier/fare.",
+    "military": "Active U.S. military: personal travel 2 free bags in Delta Main/Comfort (3 in Premium Select/First/One); on military orders 5 free bags.",
+    "cardBags": 1,
+    "statusBags": 1,
+    "militaryBags": 2
+   },
+   "changes": "Domestic fees rose for tickets purchased on/after April 8, 2026: 1st bag $35 -> $45, 2nd bag $45 -> $55 (Delta 'Previous Checked Baggage Fees': 'Within the United States — Ticketed before April 8, 2026 — Increased fees for the 1st bag from $35 to $45; Increased fees for the 2nd bag from $45 to $55').",
+   "notes": "Fare names now 'Delta Main', 'Delta Comfort', 'Delta Main Basic'. Delta One/Delta First get 70 lb per bag. No personal-item dimensions published.",
+   "sources": [
+    "delta-carryon",
+    "delta-fees",
+    "delta-excess",
+    "delta-medallion",
+    "delta-military",
+    "delta-previous"
+   ],
+   "readOn": "2026-10-26",
+   "via": "live"
+  },
+  {
+   "id": "united",
+   "name": "United Airlines",
+   "region": "us",
+   "currency": "USD",
+   "personal": {
+    "in": [
+     17,
+     10,
+     9
+    ],
+    "lb": null,
+    "note": "United writes it as 9 in x 10 in x 17 in."
+   },
+   "carry": {
+    "in": [
+     22,
+     14,
+     9
+    ],
+    "cm": [
+     56,
+     35,
+     23
+    ],
+    "note": "Basic Economy: personal item only on most trips (carry-on allowed only to South America, transatlantic, transpacific); a carry-on must be checked for a fee: from $50 in the airport lobby and $75 at the gate for tickets purchased on/after April 3, 2026 ($40/$65 before). Exempt: MileagePlus Premier members and those traveling with them, primary cardmembers of a qualifying co-branded card, Star Alliance Gold."
+   },
+   "checked": {
+    "linearIn": 62,
+    "lb": 50,
+    "note": "domestic US, United Economy"
+   },
+   "carryIncluded": "not-basic",
+   "carryFee": {
+    "online": 50,
+    "airport": 75
+   },
+   "fees": {
+    "first": {
+     "online": 45,
+     "airport": 50
+    },
+    "second": null,
+    "third": null
+   },
+   "range": null,
+   "dynamic": false,
+   "overweight": null,
+   "oversize": null,
+   "perks": {
+    "card": "Airline co-branded credit card: fee waivers exist for cardmembers (and qualifying primary cardmembers may bring a carry-on in Basic Economy); the free-checked-bag details (number of bags, companions) are not on the pages read.",
+    "status": "MileagePlus Premier: the member and up to nine others on the same itinerary check bags free; economy within U.S./Canada/Mexico/Caribbean/Central America: Silver 1 bag, Gold 2, Platinum 3, 1K 3 (70 lb each).",
+    "military": "U.S. military personal travel: 3 free bags (62 in, 70 lb); on military orders: 5 free bags (115 in, 100 lb).",
+    "statusBags": 1,
+    "militaryBags": 3
+   },
+   "changes": "Bag fees for domestic flights (and U.S.–Canada/Caribbean/Mexico, short Latin America) increased for tickets purchased on or after April 3, 2026; Basic Economy checked-carry-on fee now from $50 lobby / $75 gate (was $40/$65).",
+   "notes": "united.com refused automated connections; read from Wayback captures of 2026-10-11. 2nd/3rd bag, overweight and oversize dollar amounts are shown only by United's JavaScript bag-fee calculator, so they are null.",
+   "sources": [
+    "united-carryon",
+    "united-checked"
+   ],
+   "readOn": "2026-10-11",
+   "via": "wayback",
+   "carryFeeLabels": [
+    "airport lobby",
+    "gate"
+   ],
+   "carryFeeFrom": "2026-04-03"
+  },
+  {
+   "id": "southwest",
+   "name": "Southwest Airlines",
+   "region": "us",
+   "currency": "USD",
+   "personal": null,
+   "carry": {
+    "in": [
+     24,
+     16,
+     10
+    ],
+    "note": "Carry-on + personal item free on every fare, including Basic. Help-center wording: 24” (length) × 16” (width) × 10” (height), wheels/handles included."
+   },
+   "checked": {
+    "linearIn": 62,
+    "lb": 50,
+    "note": "U.S. Mainland, Basic/Choice/Choice Preferred fares, booked/ticketed/changed on or after April 9, 2026 (Choice Extra: 2 bags free)"
+   },
+   "carryIncluded": "all",
+   "carryFee": null,
+   "fees": {
+    "first": {
+     "online": 45,
+     "airport": 45
+    },
+    "second": {
+     "online": 55,
+     "airport": 55
+    },
+    "third": {
+     "online": 150,
+     "airport": 150
+    }
+   },
+   "range": null,
+   "dynamic": false,
+   "overweight": [
+    {
+     "fromLb": 51,
+     "toLb": 70,
+     "fee": 100
+    },
+    {
+     "fromLb": 71,
+     "toLb": 100,
+     "fee": 200
+    }
+   ],
+   "oversize": {
+    "fromLinearIn": 63,
+    "fee": 200
+   },
+   "perks": {
+    "card": "Airline co-branded credit card: first standard checked bag free for the primary cardmember and up to 8 passengers on the same reservation (Rapid Rewards number must be in the booking).",
+    "status": "A-List Preferred: 1st and 2nd bags free (+ up to 8 passengers on the reservation); A-List: 1st bag free (+ up to 8 passengers).",
+    "military": "Active-duty military with valid military ID: 1st and 2nd checked bags free.",
+    "cardBags": 1,
+    "statusBags": 1,
+    "militaryBags": 2
+   },
+   "changes": "For U.S. Mainland travel booked/ticketed/changed on or after April 9, 2026: 1st bag $35 -> $45, 2nd bag $45 -> $55. Interisland Hawaii (non-residents): $15/$20 -> $30/$40.",
+   "notes": "Help-center pages (support.southwest.com) are JavaScript-rendered; they were read with WebFetch on 2026-10-26 (via 'live'), not with curl.",
+   "sources": [
+    "southwest-fees",
+    "southwest-carryon",
+    "southwest-checked"
+   ],
+   "readOn": "2026-10-26",
+   "via": "live"
+  },
+  {
+   "id": "alaska",
+   "name": "Alaska Airlines",
+   "region": "us",
+   "currency": "USD",
+   "personal": null,
+   "carry": {
+    "in": [
+     22,
+     14,
+     9
+    ],
+    "linearIn": 45,
+    "note": "Carry-on free for all traveler types incl. Saver fares (fee table: Carry-On = Free)."
+   },
+   "checked": {
+    "linearIn": 62,
+    "lb": 50,
+    "note": "North America, Main Cabin and Saver, flights ticketed on or after April 10, 2026"
+   },
+   "carryIncluded": "all",
+   "carryFee": null,
+   "fees": {
+    "first": {
+     "online": 45,
+     "airport": 45
+    },
+    "second": {
+     "online": 55,
+     "airport": 55
+    },
+    "third": {
+     "online": 200,
+     "airport": 200
+    }
+   },
+   "range": null,
+   "dynamic": false,
+   "overweight": [
+    {
+     "fromLb": 51,
+     "toLb": 70,
+     "fee": 100
+    },
+    {
+     "fromLb": 71,
+     "toLb": 100,
+     "fee": 200
+    }
+   ],
+   "oversize": {
+    "fromLinearIn": 63,
+    "fee": 200
+   },
+   "perks": {
+    "card": "Airline co-branded credit card: one free checked bag for the cardholder and up to 6 guests on the same reservation when the airfare is bought with the card.",
+    "status": "Atmos Silver / oneworld Ruby: 1st bag free; Gold / Sapphire: 2 bags; Platinum & Titanium / Emerald: 3 bags (status-holder companions on the same reservation included).",
+    "military": "Active-duty U.S. military with ID, leisure travel: 1st-3rd bags free up to 70 lb (up to 5 at 70 lb); with orders: also overweight/oversize charges waived up to 5 bags.",
+    "cardBags": 1,
+    "statusBags": 1,
+    "militaryBags": 3
+   },
+   "changes": "For flights ticketed on or after April 10, 2026: 1st bag $40 ($35 prepay) -> $45, 2nd $45 -> $55, 3rd/4th+ $150 -> $200; the $5 online pre-pay discount no longer appears.",
+   "notes": "Fee table is in the page's embedded JSON (rendered client-side); quotes are table rows joined with ' | '. Intra-Hawaii fares differ ($30/$40/$50).",
+   "sources": [
+    "alaska-checked",
+    "alaska-carryon",
+    "alaska-card"
+   ],
+   "readOn": "2026-10-26",
+   "via": "live"
+  },
+  {
+   "id": "jetblue",
+   "name": "JetBlue",
+   "region": "us",
+   "currency": "USD",
+   "personal": {
+    "in": [
+     17,
+     13,
+     8
+    ],
+    "lb": null,
+    "note": "Dimensions stated in the U.K./Europe paragraph of Flights Terms; the domestic paragraph gives no personal-item size."
+   },
+   "carry": {
+    "in": [
+     22,
+     14,
+     9
+    ],
+    "cm": [
+     55.88,
+     35.56,
+     22.86
+    ],
+    "note": "All fares (including Main Base, the former Blue Basic) include a carry-on and a personal item."
+   },
+   "checked": {
+    "linearIn": 62,
+    "lb": null,
+    "note": "within U.S./Latin America/Caribbean/Canada, Main Base/Main/EvenMore, off-peak; 'online' = added more than 24 h before departure, 'airport' = Contract of Carriage charge for tickets bought on/after March 27, 2026 Weight: less than 51 lb (Contract of Carriage)."
+   },
+   "carryIncluded": "all",
+   "carryFee": null,
+   "fees": {
+    "first": {
+     "online": 45,
+     "airport": 49
+    },
+    "second": {
+     "online": 59,
+     "airport": 69
+    },
+    "third": {
+     "online": 200,
+     "airport": 200
+    }
+   },
+   "range": null,
+   "dynamic": false,
+   "overweight": [
+    {
+     "fromLb": 51,
+     "toLb": 70,
+     "fee": 150
+    },
+    {
+     "fromLb": 71,
+     "toLb": 99,
+     "fee": 150
+    }
+   ],
+   "oversize": {
+    "fromLinearIn": 63,
+    "fee": 150
+   },
+   "perks": {
+    "card": "Airline co-branded credit cards (two tiers): first checked bag included for the cardmember and up to three travelers on the same itinerary, JetBlue-operated flights only.",
+    "status": "Mosaic 1: 1st bag included; Mosaic 2-4: 1st and 2nd bags included (for the member and travelers on the same itinerary).",
+    "cardBags": 1,
+    "statusBags": 1
+   },
+   "changes": "Contract of Carriage (2026-06-01 revision): 1st bag $49 and 2nd bag $69 for tickets purchased on or after March 27, 2026; 3rd+ bag up to $200 for tickets purchased on or after April 17, 2026. Fare 'Blue Basic' renamed 'Main Base' on jetblue.com.",
+   "notes": "Online (advance) vs. within-24h pricing: the fees page shows the advance price with the saving included; the within-24h price equals the CoC charge ($49/$69 off-peak). Military free-bag policy not found on the pages read. CoC PDF read via Wayback (2026-10-14); PDF text extraction splits some words, quotes are normalised.",
+   "sources": [
+    "jetblue-fees",
+    "jetblue-terms",
+    "jetblue-coc"
+   ],
+   "readOn": "2026-10-26",
+   "via": "wayback"
+  },
+  {
+   "id": "frontier",
+   "name": "Frontier Airlines",
+   "region": "us",
+   "currency": "USD",
+   "personal": {
+    "in": [
+     18,
+     14,
+     8
+    ],
+    "lb": 35,
+    "note": "One personal item included with all fares, checked at boarding."
+   },
+   "carry": {
+    "in": [
+     24,
+     16,
+     10
+    ],
+    "lb": 35,
+    "note": "Carry-on is paid unless included in a bundle (Economy, Premium, Business bundles) or Elite Gold+; price varies by travel dates and when purchased (cheaper at booking than at the airport)."
+   },
+   "checked": {
+    "linearIn": 62,
+    "lb": 40,
+    "note": "domestic US"
+   },
+   "carryIncluded": "paid",
+   "carryFee": null,
+   "fees": null,
+   "range": null,
+   "dynamic": true,
+   "overweight": [
+    {
+     "fromLb": 41,
+     "toLb": 50,
+     "fee": 75
+    },
+    {
+     "fromLb": 51,
+     "toLb": 99,
+     "fee": 129
+    }
+   ],
+   "oversize": {
+    "fromLinearIn": 63,
+    "fee": 75
+   },
+   "perks": {
+    "status": "Elite Silver: personal item; Elite Gold: carry-on (member only); Elite Platinum: carry-on + 1 checked bag (member + up to 8 on the same reservation); Elite Diamond: carry-on + 2 checked bags (member + up to 8).",
+    "military": "Active U.S. military with CAC/military ID (and accompanying spouse/children on the same itinerary): one personal item, one carry-on and two checked bags free, overweight/oversize fees waived on the two free bags.",
+    "militaryBags": 2
+   },
+   "changes": "Overweight 51-99.99 lb fee $100 -> $129 for bookings made on or after April 4, 2026 (41-50 lb remains $75).",
+   "notes": "Checked-bag standard limit is 40 lb (bags of 41-50 lb pay $75). A co-branded card free-bag benefit is not stated on the pages read.",
+   "sources": [
+    "frontier-bags",
+    "frontier-optional",
+    "frontier-military"
+   ],
+   "readOn": "2026-10-26",
+   "via": "live"
+  },
+  {
+   "id": "allegiant",
+   "name": "Allegiant Air",
+   "region": "us",
+   "currency": "USD",
+   "personal": {
+    "in": [
+     18,
+     14,
+     8
+    ],
+    "lb": null,
+    "note": "Free; Allegiant writes 8 in. x 14 in. x 18 in."
+   },
+   "carry": {
+    "in": [
+     22,
+     16,
+     10
+    ],
+    "cm": [
+     55,
+     40,
+     25
+    ],
+    "note": "Carry-on always paid: $10.00 to $75.00 depending on route and when added. Allegiant writes 10 in. x 16 in. x 22 in."
+   },
+   "checked": {
+    "linearIn": 80,
+    "lb": 50,
+    "note": "domestic US"
+   },
+   "carryIncluded": "paid",
+   "carryFee": null,
+   "fees": null,
+   "range": [
+    {
+     "item": "Carry-on bag",
+     "min": 10,
+     "max": 75
+    }
+   ],
+   "dynamic": true,
+   "overweight": [
+    {
+     "fromLb": 51,
+     "toLb": 70,
+     "fee": 50
+    },
+    {
+     "fromLb": 71,
+     "toLb": 100,
+     "fee": 75
+    }
+   ],
+   "oversize": {
+    "fromLinearIn": 81,
+    "fee": 75
+   },
+   "perks": {},
+   "changes": null,
+   "notes": "allegiantair.com returned HTTP 403; read from Wayback capture of 2026-09-30. Checked max size is 80 linear inches (not 62). Gate-checked bags $0.00 to $75.00; oversized personal item at airport $50.00 to $75.00.",
+   "sources": [
+    "allegiant-fees"
+   ],
+   "readOn": "2026-09-30",
+   "via": "wayback"
+  },
+  {
+   "id": "hawaiian",
+   "name": "Hawaiian Airlines",
+   "region": "us",
+   "currency": "USD",
+   "personal": null,
+   "carry": {
+    "in": [
+     22,
+     14,
+     9
+    ],
+    "linearIn": 45,
+    "note": "Carry-on free for all traveler types (fee table: Carry-On = Free)."
+   },
+   "checked": {
+    "linearIn": 62,
+    "lb": 50,
+    "note": "North America (incl. mainland–Hawaii), Main Cabin and Saver, flights ticketed on or after April 10, 2026"
+   },
+   "carryIncluded": "all",
+   "carryFee": null,
+   "fees": {
+    "first": {
+     "online": 45,
+     "airport": 45
+    },
+    "second": {
+     "online": 55,
+     "airport": 55
+    },
+    "third": {
+     "online": 200,
+     "airport": 200
+    }
+   },
+   "range": null,
+   "dynamic": false,
+   "overweight": [
+    {
+     "fromLb": 51,
+     "toLb": 70,
+     "fee": 100
+    },
+    {
+     "fromLb": 71,
+     "toLb": 100,
+     "fee": 200
+    }
+   ],
+   "oversize": {
+    "fromLinearIn": 63,
+    "fee": 200
+   },
+   "perks": {
+    "card": "Airline co-branded credit card (Hawaiian Airlines card): 2 free checked bags for the primary cardmember only, on North America–Hawaii and interisland flights; the Atmos Rewards card gives 1 free bag for the cardholder and up to 6 guests on the same reservation.",
+    "status": "Atmos Rewards status (shared Alaska/Hawaiian program): Silver 1 bag, Gold 2, Platinum/Titanium 3. Hawaii residents: Huaka'i program (interisland bags free).",
+    "military": "Same as Alaska: active-duty U.S. military with ID get 1st-3rd bags free up to 70 lb.",
+    "cardBags": 1,
+    "statusBags": 1,
+    "militaryBags": 3
+   },
+   "changes": "Same shared table as Alaska: for flights ticketed on or after April 10, 2026, 1st bag $45, 2nd $55, 3rd $200 (North America).",
+   "notes": "Old hawaiianairlines.com/our-services/baggage/* URLs now return 404; Hawaiian now publishes the shared Alaska/Hawaiian baggage page (identical content to alaskaair.com).",
+   "sources": [
+    "hawaiian-checked",
+    "hawaiian-carryon"
+   ],
+   "readOn": "2026-10-26",
+   "via": "live"
+  },
+  {
+   "id": "spirit",
+   "name": "Spirit Airlines",
+   "region": "us",
+   "currency": "USD",
+   "personal": {
+    "in": [
+     18,
+     14,
+     8
+    ],
+    "lb": null,
+    "note": "Free with every fare; must fit under the seat."
+   },
+   "carry": {
+    "in": [
+     22,
+     18,
+     10
+    ],
+    "cm": [
+     56,
+     46,
+     25
+    ],
+    "note": "Value travel option: no carry-on, can be purchased (price per flight at booking). Premium Economy and Spirit First options include a carry-on."
+   },
+   "checked": {
+    "linearIn": 62,
+    "lb": 50,
+    "note": "domestic US"
+   },
+   "carryIncluded": "paid",
+   "carryFee": null,
+   "fees": null,
+   "range": null,
+   "dynamic": true,
+   "overweight": null,
+   "oversize": null,
+   "perks": {
+    "military": "Service members (and accompanying spouse/children) with valid military ID: one free standard carry-on and two free standard checked bags; must be added online in advance.",
+    "militaryBags": 2
+   },
+   "changes": null,
+   "notes": "spirit.com and customersupport.spirit.com did not respond on 2026-10-26 (connection dropped); Wayback captures of content.spirit.com after 2026-10-11 return HTTP 502. Data from Wayback: Bag Info article (2026-05-02) and Contract of Carriage 'updated as of April 30, 2026' (capture 2026-10-08). Check Spirit's operating status before publishing.",
+   "sources": [
+    "spirit-bags",
+    "spirit-coc",
+    "houston-spirit"
+   ],
+   "readOn": "2026-10-08",
+   "via": "wayback",
+   "ceased": "2026-05-02"
+  },
+  {
+   "id": "ryanair",
+   "name": "Ryanair",
+   "region": "uk",
+   "currency": "GBP",
+   "personal": {
+    "cm": [
+     40,
+     30,
+     20
+    ]
+   },
+   "carry": {
+    "cm": [
+     55,
+     40,
+     20
+    ],
+    "kg": 10
+   },
+   "checked": {
+    "cm": [
+     81,
+     119,
+     119
+    ],
+    "kg": 23,
+    "note": "20 kg and 23 kg hold bags; no item over 32 kg or 81 × 119 × 119 cm is carried at all"
+   },
+   "carryIncluded": "bundle",
+   "carryFee": null,
+   "fees": null,
+   "range": [
+    {
+     "item": "Priority & 2 Cabin Bags",
+     "min": 12.49,
+     "max": 36,
+     "channel": "online at booking"
+    },
+    {
+     "item": "Priority & 2 Cabin Bags",
+     "min": 19.99,
+     "max": 45.5,
+     "channel": "Post Booking/Airport"
+    },
+    {
+     "item": "10kg Check-in Bag",
+     "min": 10.49,
+     "max": 44.99,
+     "channel": "online at booking"
+    },
+    {
+     "item": "10kg Check-in Bag",
+     "min": 24.0,
+     "max": 75,
+     "channel": "Post Booking/Airport"
+    },
+    {
+     "item": "10kg Check-in Bag bought at airport bag drop (not pre-booked)",
+     "min": 35.99,
+     "max": 35.99,
+     "channel": "airport"
+    },
+    {
+     "item": "20kg Check-in Bag",
+     "min": 21.49,
+     "max": 59.99,
+     "channel": "online at booking"
+    },
+    {
+     "item": "20kg Check-in Bag",
+     "min": 39.99,
+     "max": 75,
+     "channel": "Post Booking/Airport"
+    },
+    {
+     "item": "20kg Check-in Bag bought at airport bag drop (not pre-booked)",
+     "min": 59.99,
+     "max": 59.99,
+     "channel": "airport"
+    },
+    {
+     "item": "23kg Check-in bag",
+     "min": 28.99,
+     "max": 80.99,
+     "channel": "online at booking"
+    },
+    {
+     "item": "23kg Check-in bag",
+     "min": 54,
+     "max": 97,
+     "channel": "Post Booking/Airport"
+    }
+   ],
+   "dynamic": true,
+   "overweight": null,
+   "oversize": null,
+   "perks": {},
+   "personalNote": "all fares (free)",
+   "carryNote": "Priority & 2 Cabin Bags add-on; included in Regular and Flexi Plus (and Plus tickets bought before 11 Dec 2019)",
+   "excess": {
+    "amount": 13,
+    "currency": "GBP/EUR",
+    "where": "airport/call centre/kiosk",
+    "src": "ryanair-fees",
+    "quote": "Excess Baggage Fee Per Kilo n/a €/£13 The price at the airport/call centre/kiosk is €/£13 per extra kilo."
+   },
+   "gate": {
+    "oversizeOrUnpaidCabinBag": {
+     "min": 70,
+     "max": 75
+    },
+    "tenKgBagAtGate": {
+     "min": 46,
+     "max": 75
+    },
+    "src": "ryanair-fees",
+    "quote": "Passengers who bring an oversize bag (over 55x40x20cm) to the boarding gate will either have their bag refused or, where available, placed in the hold of the aircraft for a fee of €/£70.00 - €/£75.00. [...] Non-priority customers who bring their 10kg check-in bag to the boarding gate will either have their bag refused or, where available, placed in the hold of the aircraft for a fee of €/£46.00 - €/£75.00.",
+    "note": "Terms add '(plus VAT on domestic flights)' to the €/£70-75 gate fee."
+   },
+   "changes": null,
+   "notes": "No 2026-dated baggage change found on the pages read. Fee ranges are official min-max per flight; exact price is shown at booking.",
+   "sources": [
+    "ryanair-fees",
+    "ryanair-terms"
+   ],
+   "readOn": "2026-10-26",
+   "via": "live"
+  },
+  {
+   "id": "easyjet",
+   "name": "easyJet",
+   "region": "uk",
+   "currency": "GBP",
+   "personal": {
+    "cm": [
+     45,
+     36,
+     20
+    ],
+    "kg": 15
+   },
+   "carry": {
+    "cm": [
+     56,
+     45,
+     25
+    ],
+    "kg": 15
+   },
+   "checked": {
+    "linearCm": 275,
+    "kg": 32,
+    "note": "hold bags of 15, 23, 26, 29 or 32 kg; total size under 275 cm"
+   },
+   "carryIncluded": "bundle",
+   "carryFee": null,
+   "fees": null,
+   "range": [
+    {
+     "item": "Large cabin bag at the boarding gate",
+     "min": 60,
+     "max": 60,
+     "channel": "airport"
+    },
+    {
+     "item": "Hold bag at bag drop desk (not pre-booked, up to 23kg)",
+     "min": 60,
+     "max": 60,
+     "channel": "airport"
+    }
+   ],
+   "dynamic": true,
+   "overweight": null,
+   "oversize": null,
+   "perks": {},
+   "personalNote": "all fares (free)",
+   "carryNote": "paid 'large cabin bag' add-on (includes Speedy Boarding); free for easyJet Plus members; included on Inclusive Plus fare (subject to locker space)",
+   "excess": {
+    "amount": 12,
+    "currency": "GBP",
+    "where": "airport (hold items heavier than pre-booked weight)",
+    "src": "easyjet-fees",
+    "quote": "Excess weight fee per kilo, per item, per flight £12 This fee is applied for hold items weighing more than the pre-booked weight. The maximum weight per hold item we can accept is 32kg."
+   },
+   "gate": {
+    "amount": 60,
+    "currency": "GBP",
+    "src": "easyjet-cabin",
+    "quote": "It’s always cheaper to add a large cabin bag online than at the boarding gate, where it costs £60."
+   },
+   "changes": null,
+   "notes": "No effective date for the power-bank ban is shown on the page. Small and large cabin bag both 15kg max per easyJet pages.",
+   "sources": [
+    "easyjet-cabin",
+    "easyjet-hold",
+    "easyjet-fees",
+    "easyjet-dg"
+   ],
+   "readOn": "2026-10-26",
+   "via": "live"
+  },
+  {
+   "id": "jet2",
+   "name": "Jet2",
+   "region": "uk",
+   "currency": "GBP",
+   "personal": {
+    "cm": [
+     40,
+     30,
+     20
+    ]
+   },
+   "carry": {
+    "cm": [
+     56,
+     45,
+     25
+    ],
+    "kg": 10
+   },
+   "checked": {
+    "kg": 22,
+    "note": "22 kg hold bags; no general hold size published"
+   },
+   "carryIncluded": "all",
+   "carryFee": null,
+   "fees": null,
+   "range": null,
+   "dynamic": true,
+   "overweight": null,
+   "oversize": null,
+   "perks": {},
+   "personalNote": "all fares (free)",
+   "carryNote": "all fares (free, excluding infants); 'Guaranteed Cabin Luggage' is a paid add-on to keep it in the cabin on busy flights",
+   "excess": null,
+   "gate": null,
+   "changes": null,
+   "notes": "Jet2 includes 10kg hand luggage on every fare. Fees null: priced per flight at booking and official fee page not reachable.",
+   "sources": [
+    "jet2-bags",
+    "jet2-dg"
+   ],
+   "readOn": "2026-10-01",
+   "via": "wayback"
+  },
+  {
+   "id": "british-airways",
+   "name": "British Airways",
+   "region": "uk",
+   "currency": "GBP",
+   "personal": {
+    "cm": [
+     40,
+     30,
+     15
+    ]
+   },
+   "carry": {
+    "cm": [
+     56,
+     45,
+     25
+    ]
+   },
+   "checked": {
+    "cm": [
+     90,
+     75,
+     43
+    ],
+    "kg": 23,
+    "note": "23 kg in Economy and Premium Economy, 32 kg in Business and First; no hold bag on Economy Basic"
+   },
+   "carryIncluded": "all",
+   "carryFee": null,
+   "fees": null,
+   "range": null,
+   "dynamic": true,
+   "overweight": null,
+   "oversize": null,
+   "perks": {},
+   "personalNote": "all fares incl. Economy Basic (hand baggage only)",
+   "carryNote": "all fares including Economy Basic (hand baggage only)",
+   "excess": null,
+   "gate": null,
+   "changes": "Page banner 'Update to our power banks policy' (no effective date stated): power banks and spare batteries forbidden in checked baggage.",
+   "notes": "BA is a full-service carrier: hand bag + cabin bag free on all fares; heavy bag fee 65 GBP. Extra-bag prices only via calculator/booking.",
+   "sources": [
+    "ba-bags",
+    "ba-restrictions"
+   ],
+   "readOn": "2026-09-30",
+   "via": "wayback"
+  },
+  {
+   "id": "wizz-air",
+   "name": "Wizz Air",
+   "region": "uk",
+   "currency": "EUR",
+   "personal": {
+    "cm": [
+     40,
+     30,
+     20
+    ],
+    "kg": 10
+   },
+   "carry": {
+    "cm": [
+     55,
+     40,
+     23
+    ],
+    "kg": 10
+   },
+   "checked": {
+    "cm": [
+     149,
+     119,
+     171
+    ],
+    "kg": 32,
+    "note": "hold bags of 10, 20, 26 or 32 kg"
+   },
+   "carryIncluded": "bundle",
+   "carryFee": null,
+   "fees": null,
+   "range": null,
+   "dynamic": true,
+   "overweight": null,
+   "oversize": null,
+   "perks": {},
+   "personalNote": "all fares (free)",
+   "carryNote": "WIZZ Priority only (purchased during booking)",
+   "excess": {
+    "amount": 13,
+    "currency": "EUR",
+    "where": "airport",
+    "src": "wizz-checked",
+    "quote": "Weigh your bags before you arrive, as a ‎13 EUR/kg surcharge will be due at the airport if your bag weighs between 10 kg and 20 kg or between 20 kg and 32 kg."
+   },
+   "gate": null,
+   "changes": null,
+   "notes": "Wizz help pages still show a 40x30x20 cm free bag; some booking-flow strings on the same site mention 42x32x25 cm, not used here (help-centre allowance page is authoritative).",
+   "sources": [
+    "wizz-allowance",
+    "wizz-cabin",
+    "wizz-checked",
+    "wizz-restricted"
+   ],
+   "readOn": "2026-10-26",
+   "via": "live"
+  },
+  {
+   "id": "tui",
+   "name": "TUI Airways (tui.co.uk)",
+   "region": "uk",
+   "currency": "GBP",
+   "personal": {
+    "cm": [
+     40,
+     30,
+     20
+    ]
+   },
+   "carry": {
+    "cm": [
+     55,
+     40,
+     20
+    ],
+    "kg": 10
+   },
+   "checked": {
+    "kg": 25,
+    "note": "20 kg on most packages, 25 kg on some; no bag over 25 kg accepted"
+   },
+   "carryIncluded": "all",
+   "carryFee": null,
+   "fees": null,
+   "range": [
+    {
+     "item": "Flight-only checked bag (15kg), short-haul",
+     "min": 60,
+     "max": 60,
+     "channel": "airport"
+    },
+    {
+     "item": "Flight-only checked bag (15kg), Cape Verde/Egypt/Gambia/Senegal/long-haul",
+     "min": 80,
+     "max": 80,
+     "channel": "airport"
+    }
+   ],
+   "dynamic": true,
+   "overweight": null,
+   "oversize": null,
+   "perks": {},
+   "personalNote": "flight-only and package customers aged 2+",
+   "carryNote": "all TUI Airways customers aged 2+ (flight-only and package)",
+   "excess": {
+    "shortMidHaul": 15,
+    "longHaul": 20,
+    "currency": "GBP",
+    "where": "airport",
+    "src": "tui-luggage",
+    "quote": "Short and mid-haul flights (less than seven hours) - £15 per additional kilo [...] Long-haul flights (over seven hours): - £20 per additional kg"
+   },
+   "gate": null,
+   "changes": null,
+   "notes": "Charges may vary by season per TUI page.",
+   "sources": [
+    "tui-luggage"
+   ],
+   "readOn": "2026-10-26",
+   "via": "live"
+  },
+  {
+   "id": "virgin-atlantic",
+   "name": "Virgin Atlantic",
+   "region": "uk",
+   "currency": "GBP",
+   "personal": null,
+   "carry": {
+    "cm": [
+     56,
+     36,
+     23
+    ],
+    "kg": 10
+   },
+   "checked": {
+    "cm": [
+     90,
+     75,
+     43
+    ],
+    "kg": 23,
+    "note": "23 kg in Economy Classic and Delight; no checked bag on Economy Light"
+   },
+   "carryIncluded": "all",
+   "carryFee": null,
+   "fees": null,
+   "range": null,
+   "dynamic": true,
+   "overweight": null,
+   "oversize": null,
+   "perks": {},
+   "personalNote": null,
+   "carryNote": "all Economy (Light, Classic, Delight) and Premium tickets; Upper Class 2 pieces (12kg each, 16kg combined)",
+   "excess": null,
+   "gate": null,
+   "changes": null,
+   "notes": "All Virgin Atlantic figures come from mid-2025 Wayback captures; flag as unverified for 2026.",
+   "sources": [
+    "va-hand",
+    "va-checked"
+   ],
+   "readOn": "2025-06-28",
+   "via": "wayback",
+   "unconfirmed": true
+  }
+ ]
+}

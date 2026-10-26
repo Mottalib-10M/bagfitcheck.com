@@ -1,0 +1,23 @@
+---
+import PageLayout from '../../layouts/PageLayout.astro';
+import LegalIdentity from '../../components/LegalIdentity.astro';
+import { CONTACT_EMAIL, LAST_UPDATED, SITE_NAMES } from '../../data/site-config';
+import { route } from '../../i18n/routes';
+import { displayDate } from '../../lib/format';
+const lang = 'en';
+---
+<PageLayout title={`Contact ${SITE_NAMES[lang]}: a size, a fee, the bag checker`} description="Write to US UK Baggage when an airline changes a bag size or fee, when a page seems wrong, or to embed the bag checker on a travel guide, school or community site." lang={lang} noindex={true} breadcrumbs={[{ label: 'Contact' }]} showAuthor={false}>
+  <div class="prose prose-slate max-w-none">
+    <h1>Contact</h1>
+    <p>Email: <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>. A person reads every message.</p>
+    <h2>An airline changed its rules</h2>
+    <p>Send the airline's name and the address of its page that shows the new size or fee. We read that page, update the airline record, and the new reading date appears on every page that uses it.</p>
+    <h2>What we cannot do</h2>
+    <p>We are not an airline or an airport. We cannot add a bag to a booking, refund a fee, or promise that a gate agent will accept a bag. Please do not send booking references, ticket numbers or personal details.</p>
+    <h2>Using the checker on your own site</h2>
+    <p>Travel guides, schools and community groups can show the bag checker or the fee calculator in an iframe at no cost: see the <a href={route('widget', lang)}>embed page</a>.</p>
+    <h2>Publisher</h2>
+    <LegalIdentity lang={lang} />
+    <p>Updated on <time datetime={LAST_UPDATED}>{displayDate(LAST_UPDATED, 'en-US')}</time>.</p>
+  </div>
+</PageLayout>

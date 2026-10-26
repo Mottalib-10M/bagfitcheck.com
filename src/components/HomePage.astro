@@ -1,0 +1,104 @@
+---
+/**
+ * Home (pillar page). The bag checker first, then the airline grid, the round-trip fee calculator,
+ * the reason the site exists, the liquids checker, the 2026 fee changes and every page of the site.
+ * Every size and fee is read from data/airlines.json through the helpers.
+ */
+import PageLayout from '../layouts/PageLayout.astro';
+import Tool from './Tool.astro';
+import Clamp from './Clamp.astro';
+import Sources from './Sources.astro';
+import { route } from '../i18n/routes';
+import { PAGES } from '../lib/guides';
+import { GROUPS_ORDER, groupLabel } from '../i18n/nav';
+import { helpers } from '../lib/helpers';
+import { AIRLINES } from '../lib/engine/bags';
+import { LAST_UPDATED, AUTHOR_NAME } from '../data/site-config';
+import { displayDate } from '../lib/format';
+import { faqSchema, webApplicationSchema, websiteSchema, organizationSchema } from '../lib/seo';
+const lang = 'en';
+const h = helpers(lang, true);
+const N = AIRLINES.length;
+const cards = (g: (typeof GROUPS_ORDER)[number]) => PAGES.filter((p) => p.group === g).map((p) => ({ href: route(p.id, lang), name: p.en.nav, text: p.en.card }));
+const aa = h.A('american'), dl = h.A('delta'), ua = h.A('united'), wn = h.A('southwest'), fr = h.A('ryanair'), u2 = h.A('easyjet'), ba = h.A('british-airways'), f9 = h.A('frontier');
+const T = h.P.rules.tsa, U = h.P.rules.uk, B = h.P.rules.batteries;
+const big = U.airports.filter((a) => a.rule === 'large').map((a) => a.name);
+
+const title = `Carry-On Size Checker and Bag Fees 2026: ${N} Airlines`;
+const description = `Measure your bag once: see which of ${N} US and UK airlines take it as a personal item, carry-on or checked bag, and what a round trip costs in bag fees.`;
+const faqs = [
+  { q: 'Will a 22 x 14 x 9 inch bag fit in the overhead bin on every airline?', a: `On every US airline on this site, yes, if it is measured with wheels and handles. In Europe it is a different story: 22 by 14 by 9 inches is 56 by 36 by 23 cm, too deep for Ryanair's ${fr.co} cabin bag and Wizz Air's paid trolley bag, while easyJet, Jet2 and British Airways take it. Enter your bag in the checker to see each airline.` },
+  { q: 'Which airlines still include a carry-on in the cheapest fare?', a: `Among US airlines, American, Delta, Southwest, Alaska, Hawaiian and JetBlue include it. United does not on most Basic Economy trips, and Frontier and Allegiant charge for it. Among UK and European airlines, Jet2, British Airways and TUI include a 10 kg or larger cabin bag, while Ryanair, easyJet and Wizz Air sell it as an extra.` },
+  { q: 'How much is a checked bag on US airlines in 2026?', a: `On the large US airlines, the first checked bag now costs ${dl.f('first')} each way and the second ${dl.f('second')}, after the increases of April 2026. American charges ${aa.f('first')} online and ${aa.f('first', 'airport')} at the airport, JetBlue ${h.A('jetblue').f('first')} when paid more than a day ahead. Frontier and Allegiant price bags per flight.` },
+  { q: 'Can I get my checked bag for free?', a: 'Yes, in three ways on most US airlines: a co-branded credit card of the airline usually gives the first bag free to the cardholder and companions on the same booking, elite status gives one to three free bags, and active-duty military personnel get two or three free bags on personal travel. The fee calculator applies the number each airline states.' },
+  { q: 'Is the 100 ml liquid rule still in force at UK airports?', a: `It depends on the airport. ${big.join(', ')} say on their own pages that you can carry containers of up to 2 litres through their new scanners. Most other UK airports keep 100 ml containers, but many no longer require the plastic bag. The rule at your return airport abroad may still be 100 ml.` },
+  { q: 'Can I take a power bank on a plane?', a: `Yes, in your carry-on only, never in a checked bag. Up to ${B.noApprovalWh} watt-hours needs no approval, which covers almost every phone power bank; ${B.noApprovalWh + 1} to ${B.approvalWh} Wh needs the airline's approval, at most ${B.approvalMaxSpares} spares. Several UK and European airlines also limit the number of power banks or forbid using them during the flight.` },
+  { q: 'Is this site run by an airline?', a: `No. It is published independently by ${AUTHOR_NAME}, which reads each airline's own baggage pages and the TSA, FAA, GOV.UK and airport pages, then dates every figure. It sells no luggage, takes no booking and earns no commission. The airline's conditions at booking and the gate agent have the final word.` },
+];
+const jsonLd = [websiteSchema(lang), organizationSchema(lang), webApplicationSchema({ name: 'Will my bag fit?', description, path: route('home', lang), lang }), faqSchema(faqs, lang)];
+const resume = `A bag of 22 by 14 by 9 inches, wheels and handles included, fits the overhead bin of every US airline on this site; under the seat, the personal item limit runs from ${ua.pi} on United to ${aa.pi} on American, and several airlines publish no figure at all. In the UK and Europe the numbers shrink and change from one airline to the next: the free under-seat bag is ${fr.pi} on Ryanair and ${u2.pi} on easyJet, and a larger cabin bag is either included in the fare (Jet2, British Airways, TUI) or sold as an extra (Ryanair, easyJet, Wizz Air). Checked bags on the large US airlines cost ${dl.f('first')} for the first and ${dl.f('second')} for the second each way since the increases of April 2026, unless a co-branded card, elite status or military service waives them. The checker above compares your own bag with all ${N} airlines at once, and the calculator below adds up the fees of your round trip.`;
+const gridRows = AIRLINES.map((a) => { const x = h.A(a.id); return [h.a(a.id, a.name), x.pi, x.co, a.region === 'us' ? (a.checked?.lb ? `${a.checked.lb} lb` : 'under 51 lb') : `${a.checked?.kg} kg`]; });
+const changes = [
+  ['JetBlue', 'March 27, 2026', 'first and second bag $49 and $69 when added within 24 hours of departure'],
+  ['United', 'April 3, 2026', 'bag fees raised; Basic Economy carry-on check from $50 (lobby) and $75 (gate)'],
+  ['Frontier', 'April 4, 2026', 'bags of 51 to 99 lb: overweight fee $129'],
+  ['Delta', 'April 8, 2026', 'first bag $35 to $45, second $45 to $55'],
+  ['American', 'April 9, 2026', 'first bag $45 online, $50 airport; third bag $200'],
+  ['Southwest', 'April 9, 2026', 'first bag $35 to $45, second $45 to $55'],
+  ['Alaska and Hawaiian', 'April 10, 2026', 'first bag $45, second $55, third $200'],
+  ['Spirit', 'May 2, 2026', 'flights stopped, airline wound down'],
+  ['American', 'May 18, 2026', 'Basic Economy pays $5 more per checked bag'],
+];
+---
+<PageLayout title={title} description={description} lang={lang} jsonLd={jsonLd} faqs={faqs} breadcrumbs={[]}>
+  <header class="mb-3">
+    <h1 class="mt-0 text-[1.75rem] font-bold text-navy-900 max-sm:leading-tight sm:text-3xl md:text-4xl">Will my bag fit? Carry-on size and bag fees, {N} airlines</h1>
+    <p class="mt-2 text-base text-navy-700 sm:text-lg">Measure your bag once: personal item, carry-on or checked, US and UK airlines side by side.</p>
+  </header>
+  <div data-outil class="mb-4"><Tool tool={{ kind: 'fit', props: { mode: 'carry', region: 'all', unit: 'in' } }} primary={true} seedKey="home" /></div>
+  <Clamp text={resume} id="clamp-home" lang={lang} class="mb-3" />
+  <p class="mb-8 text-sm text-navy-600">Sizes and fees checked on <time datetime={LAST_UPDATED}>{displayDate(LAST_UPDATED, 'en-US')}</time> · {AUTHOR_NAME} · <a href={route('method', lang)} class="underline hover:text-navy-900">How a bag is tested</a> · <a href={route('about', lang)} class="underline hover:text-navy-900">About this site</a></p>
+
+  <div class="prose prose-slate max-w-none">
+    <h2>The three bags, airline by airline</h2>
+    <p>Every airline sorts what you carry into three bags. The personal item goes under the seat in front of you and is free on every fare. The carry-on goes in the overhead bin and is free on some fares and airlines only. The checked bag goes in the hold, with a weight limit and, almost everywhere, a fee. The grid gives the limits as each airline publishes them: inches for US airlines, centimetres for UK and European airlines, with the other unit converted by us. Click an airline for its fees, its exemptions and the date its page was read.</p>
+    <Fragment set:html={h.table(['Airline', 'Personal item', 'Carry-on', 'Checked bag weight'], gridRows, 'Delta, Southwest, Alaska and Hawaiian give no personal item dimensions: it must fit under the seat. Virgin Atlantic figures come from an archived 2025 copy of its page.', ['l', 'l', 'l', 'l'])} />
+    <h2>What your bags cost on a round trip</h2>
+    <p>Bag fees are charged each way, per bag and per traveler, so a family of four with one bag each pays the first-bag fee eight times on a round trip. The calculator multiplies it out for you. It takes the fee table each airline publishes, the online or airport price where they differ, and removes the bags that a co-branded card, elite status or military service makes free, in the number the airline states. For airlines that price bags per flight, it shows the range they publish instead of guessing.</p>
+  </div>
+  <div class="mb-6"><Tool tool={{ kind: 'fees', props: { airline: 'american', bags: 1 } }} idPrefix="h1" /></div>
+  <div class="prose prose-slate max-w-none">
+    <p>Paying online before the flight is cheaper on American ($5 less per bag) and on JetBlue when you pay more than a day ahead; Delta, Southwest, Alaska and Hawaiian charge the same everywhere. The full comparison, with the third bag and the free-bag rules, is on the <Fragment set:html={h.a('checked-bag-fees', 'checked bag fees page')} />.</p>
+
+    <h2>Why one tape measure against {N} rulebooks changes everything</h2>
+    <p>Each airline publishes its own limits on its own page, in its own unit and with its own words: length by width by height, or linear inches, or a sizer at the gate described in centimetres. A traveler who flies one airline out and another home, or connects from a US flight to a European one, has to open six pages and convert every number. Articles that summarize them are usually written once and never updated, and several of the figures they repeat changed in 2026: every large US airline raised its checked bag fees between March and May, and one low-cost airline stopped flying altogether.</p>
+    <p>This site keeps one record per airline, read on the airline's own pages and dated, and runs your bag against all of them. Because the bag is tested in the orientation that suits it, as it would be pushed into a sizer, a bag that is a little long on one side but slim on the others is judged fairly. The answer says which side is over and by how much, which tells you whether to leave the outside pocket empty or to switch bags. The same records feed every page of the site, so a fee that changes is changed once and appears everywhere with its new date.</p>
+    <p>The site also says what it does not know. When an airline shows a fee only inside its booking tool, the calculator says so instead of inventing an average; when an airline's page could only be read on an archived copy, the airline's page here gives the date of that copy.</p>
+
+    <h2>Liquids at the security checkpoint</h2>
+    <p>At US airports the TSA rule is the same everywhere: containers of {h.num(T.oz, 1)} ounces ({T.ml} ml) or less, in one {T.bag} per passenger. In the UK the rule now depends on the airport. {big.join(', ')} have new scanners and say on their own pages that you can carry containers of up to 2 litres and leave them in your bag. Most other UK airports keep the 100 ml limit per container but no longer ask for the plastic bag. Choose your departure airport below.</p>
+  </div>
+  <div class="mb-6"><Tool tool={{ kind: 'liquids', props: { country: 'uk', airport: 'LHR' } }} idPrefix="h2" /></div>
+  <div class="prose prose-slate max-w-none">
+    <p>Medicines and baby food or milk are allowed in larger amounts at every airport, in both countries. The <Fragment set:html={h.a('tsa-liquid-rule', 'TSA liquids page')} /> and the <Fragment set:html={h.a('uk-liquid-rules', 'UK airport liquids page')} /> give the details and the exemptions.</p>
+
+    <h2>Power banks and batteries</h2>
+    <p>A power bank never goes in a checked bag, and it stays with you if your carry-on is checked at the gate. The limit is set in watt-hours, not in the milliamp-hours printed in large type on the pack: multiply the mAh by the voltage (usually 3.7 V) and divide by 1,000. A 20,000 mAh pack is 74 Wh, well under the {B.noApprovalWh} Wh limit. The <Fragment set:html={h.a('power-bank-on-plane', 'power bank page')} /> converts your pack and lists the airlines that limit their number or forbid using them in flight.</p>
+
+    <h2>Bag fee changes of 2026, with their dates</h2>
+    <p>Each change applies to tickets bought, issued or changed from the date shown, as each airline words it; a ticket bought before keeps the old fee.</p>
+    <Fragment set:html={h.table(['Airline', 'From', 'What changed'], changes, 'Read on each airline page; see the airline pages for the sources.', ['l', 'l', 'l'])} />
+
+    <h2>Every page of the site</h2>
+  </div>
+  <div class="not-prose grid gap-6 sm:grid-cols-2 lg:grid-cols-3" data-sommaire>
+    {GROUPS_ORDER.map((g) => (
+      <section><h3 class="mb-2 text-lg font-semibold text-navy-900">{groupLabel(g)}</h3><ul class="space-y-2 text-sm">{cards(g).map((c) => <li><a href={c.href} class="font-medium text-accent-700 underline">{c.name}</a><span class="block text-navy-700">{c.text}</span></li>)}</ul></section>
+    ))}
+  </div>
+  <div class="prose prose-slate mt-8 max-w-none">
+    <h2>How this site works</h2>
+    <p>Sizes, weights and fees come from one data file, read on each airline's own pages between July and October 2026, each record with its pages and its date; security and battery rules come from the TSA, the FAA, GOV.UK, the Civil Aviation Authority and each UK airport. The tools run in your browser: nothing you type is sent or stored. The site sells nothing, takes no booking and recommends no luggage. The <a href={route('method', lang)}>method page</a> explains how a bag is tested and how fees are added up.</p>
+    <Sources lang={lang} keys={['tsa-liquids', 'faa-packsafe', 'govuk', 'caa-packright', 'delta-fees', 'american-checked', 'southwest-fees', 'ryanair-terms', 'easyjet-cabin']} />
+  </div>
+</PageLayout>

@@ -1,0 +1,25 @@
+---
+import PageLayout from '../../layouts/PageLayout.astro';
+import { AUTHOR_NAME, CONTACT_EMAIL, LAST_UPDATED, SITE_NAMES } from '../../data/site-config';
+import { route } from '../../i18n/routes';
+import { displayDate } from '../../lib/format';
+const lang = 'en';
+---
+<PageLayout title={`Editorial policy of ${SITE_NAMES[lang]}: sources and corrections`} description="Which airline, TSA, FAA, GOV.UK and airport pages US UK Baggage relies on, how sizes and fees are dated, which sources it refuses and how a mistake is fixed." lang={lang} noindex={true} breadcrumbs={[{ label: 'Editorial policy' }]} showAuthor={false}>
+  <div class="prose prose-slate max-w-none">
+    <h1>Editorial and corrections policy</h1>
+    <p>People use these pages to decide which bag to pack and whether to pay for a bag before they fly. A size that is a centimetre out of date can cost a gate fee, so every limit and every fee points back to the page it was read on, with the day it was read.</p>
+    <h2>Who is responsible</h2><p>{AUTHOR_NAME}, reachable at <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>.</p>
+    <h2>What we read</h2>
+    <ul>
+      <li>each airline's own pages: carry-on and personal item, checked bags, fees, excess and oversize bags, and its contract or conditions of carriage where the fee pages are silent;</li>
+      <li>tsa.gov for the liquids rule and the list of what can go through a US checkpoint; faa.gov (PackSafe) for lithium batteries;</li>
+      <li>GOV.UK pages of the Department for Transport for hand luggage at UK airports; the security pages of each UK airport for its own scanner rules; caa.co.uk for batteries and dangerous goods.</li>
+    </ul>
+    <h2>Sources we refuse</h2><p>Luggage brands, travel blogs, news articles and comparison sites never supply a figure here, even when they are right. A fee that an airline only shows inside its booking flow is not invented: the page says it is priced per flight.</p>
+    <h2>Review cycle</h2><p>Airline records are read again every month and whenever an airline announces a change; an announced change is shown with its start date, never as current before that date.</p>
+    <h2>Corrections</h2>
+    <ol><li>We open the airline's or the agency's page again.</li><li>We correct the data file and its reading date, and add a test when a calculation is involved.</li><li>The site rebuilds and every page shows the new date.</li></ol>
+    <h2>Independence</h2><p>No airline, airport or luggage maker pays for or reviews what is published here, and the site carries no affiliate link. See also the <a href={route('method', lang)}>method page</a>. Version of <time datetime={LAST_UPDATED}>{displayDate(LAST_UPDATED, 'en-US')}</time>.</p>
+  </div>
+</PageLayout>

@@ -1,0 +1,33 @@
+---
+import PageLayout from '../../layouts/PageLayout.astro';
+import { LAST_UPDATED, AUTHOR_NAME, CONTACT_EMAIL, AUTHOR_ROLE, SITE_NAMES } from '../../data/site-config';
+import { route } from '../../i18n/routes';
+import { organizationSchema, breadcrumbSchema, profilePageSchema } from '../../lib/seo';
+import { displayDate } from '../../lib/format';
+import { PAGES } from '../../lib/guides';
+import { AIRLINES } from '../../lib/engine/bags';
+const lang = 'en';
+const n = PAGES.length + 1;
+const us = AIRLINES.filter((a) => a.region === 'us').map((a) => a.name).join(', ');
+const uk = AIRLINES.filter((a) => a.region === 'uk').map((a) => a.name).join(', ');
+---
+<PageLayout title="Radif Partners, publisher of US UK Baggage: who we are" description="Who publishes US UK Baggage, where each bag size, weight and fee comes from, what the checker does with your measurements, and why the site sells nothing." lang={lang} jsonLd={[organizationSchema(lang), profilePageSchema({ path: route('about', lang), lang }), breadcrumbSchema([{ name: 'Home', path: route('home', lang) }, { name: 'About', path: route('about', lang) }])]} breadcrumbs={[{ label: 'About' }]}>
+  <header class="mb-6"><p class="kicker">About</p><h1 class="mt-0 text-3xl font-bold text-navy-900 md:text-4xl">Who is behind {SITE_NAMES[lang]}</h1></header>
+  <div class="prose prose-slate max-w-none">
+    <div class="not-prose mb-6"><p class="text-lg font-semibold text-navy-900">{AUTHOR_NAME}</p><p class="text-navy-700">{AUTHOR_ROLE[lang]}</p></div>
+    <p>{SITE_NAMES[lang]} is published by {AUTHOR_NAME}, a company that builds free tools on public rules and published figures. It exists for one moment of a trip: the evening before a flight, tape measure in hand, wondering whether the bag on the bed will be waved through at the gate or cost a fee there.</p>
+    <h2>What the site does</h2>
+    <p>You measure your bag once. The checker compares those three sides and that weight with the personal item, carry-on and checked bag limits of every airline on the site at the same time, in inches or centimetres, and says by how much a side is over. The fee calculator adds up a round trip: first and second checked bag, online or at the airport, with the free bags that a co-branded credit card, elite status or military service gives on each airline. Separate tools check a liquid container against the TSA rule or the rule of your UK departure airport, and turn the mAh printed on a power bank into the watt-hours that aviation rules use.</p>
+    <h2>Which airlines</h2>
+    <p>United States: {us}. United Kingdom and Europe, as seen from a UK airport: {uk}.</p>
+    <h2>Where the figures come from</h2>
+    <p>Each size, weight and fee was read on the airline's own baggage pages, and each airline record carries the date it was read. Where a page could not be opened directly, the latest archived copy of that same airline page was read and the page says so with its capture date. Security and battery rules come from the TSA, the FAA, the Department for Transport on GOV.UK, the Civil Aviation Authority and each UK airport's own security page. No figure comes from a luggage brand, a travel blog or a comparison site. The <a href={route('method', lang)}>method page</a> explains how a bag is tested against a limit.</p>
+    <h2>What we are not</h2>
+    <p>We are not an airline, an airport, the TSA, the FAA, the Department for Transport or the Civil Aviation Authority, and no airline sponsors or reviews this site. We sell no luggage, take no booking and earn no commission. The gate agent's sizer and the conditions you accept at booking have the final word.</p>
+    <h2>How the site is paid for</h2>
+    <p>Nothing is sold here and no contact details are collected. If advertising is added one day, it will never sit inside a tool, and it cannot use your measurements, which never leave your browser.</p>
+    <h2>Tell us when something is wrong</h2>
+    <p>Airlines change fees without warning. If a figure differs from the airline's page, write to <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a> with the airline and the page. The <a href={route('editorial', lang)}>editorial policy</a> explains how a correction is made and dated. The site has {n} pages of tools and guides.</p>
+    <p class="text-sm text-navy-600">Sizes and fees last checked on <time datetime={LAST_UPDATED}>{displayDate(LAST_UPDATED, 'en-US')}</time>.</p>
+  </div>
+</PageLayout>

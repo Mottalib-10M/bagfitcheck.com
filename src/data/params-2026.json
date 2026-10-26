@@ -1,0 +1,699 @@
+{
+ "_lisezmoi": "Sources and rules of the site. Airline records live in airlines.json; every figure was read on the page cited, on the date given (RECETTE §4, §12.1). Verbatim sentences for the monthly re-reading: checks.json.",
+ "year": 2026,
+ "retrieved_at": "2026-10-26",
+ "valid_from": "2026-10-26",
+ "valid_to": "2026-12-31",
+ "sources": {
+  "american-carryon": {
+   "url": "https://web.archive.org/web/20260713/https://www.aa.com/i18n/travel-info/baggage/carry-on-baggage.jsp",
+   "label": {
+    "en": "Carry-on bags − Travel information − American Airlines: archived copy of the airline page captured on 2026-07-13 (Internet Archive), original address https://www.aa.com/i18n/travel-info/baggage/carry-on-baggage.jsp"
+   }
+  },
+  "american-checked": {
+   "url": "https://web.archive.org/web/20260713/https://www.aa.com/i18n/travel-info/baggage/checked-baggage-policy.jsp",
+   "label": {
+    "en": "Checked bag policy − Travel information − American Airlines: archived copy of the airline page captured on 2026-07-13 (Internet Archive), original address https://www.aa.com/i18n/travel-info/baggage/checked-baggage-policy.jsp"
+   }
+  },
+  "american-over": {
+   "url": "https://web.archive.org/web/20260228/https://www.aa.com/i18n/travel-info/baggage/oversize-and-overweight-baggage.jsp",
+   "label": {
+    "en": "Oversize and overweight bags − American Airlines: archived copy of the airline page captured on 2026-02-28 (Internet Archive), original address https://www.aa.com/i18n/travel-info/baggage/oversize-and-overweight-baggage.jsp"
+   }
+  },
+  "delta-carryon": {
+   "url": "https://www.delta.com/us/en/baggage/carry-on-baggage",
+   "label": {
+    "en": "Carry-On Baggage | Delta Air Lines, read on 2026-10-26"
+   }
+  },
+  "delta-fees": {
+   "url": "https://www.delta.com/us/en/baggage/overview",
+   "label": {
+    "en": "Baggage Policy and Fees | Delta Air Lines, read on 2026-10-26"
+   }
+  },
+  "delta-excess": {
+   "url": "https://www.delta.com/us/en/baggage/checked-baggage/excess-overweight-baggage",
+   "label": {
+    "en": "Excess & Overweight Baggage | Delta Air Lines, read on 2026-10-26"
+   }
+  },
+  "delta-medallion": {
+   "url": "https://www.delta.com/us/en/baggage/checked-baggage/medallion-baggage-allowance",
+   "label": {
+    "en": "Medallion & Credit Card Bag Allowance | Delta Air Lines, read on 2026-10-26"
+   }
+  },
+  "delta-military": {
+   "url": "https://www.delta.com/us/en/baggage/checked-baggage/military-baggage-allowance",
+   "label": {
+    "en": "Military Baggage | Delta Air Lines, read on 2026-10-26"
+   }
+  },
+  "delta-previous": {
+   "url": "https://www.delta.com/us/en/baggage/checked-baggage/previous-baggage-fees",
+   "label": {
+    "en": "Previous Checked Baggage Fees | Delta Air Lines, read on 2026-10-26"
+   }
+  },
+  "united-carryon": {
+   "url": "https://web.archive.org/web/20261011/https://www.united.com/en/us/fly/baggage/carry-on-bags.html",
+   "label": {
+    "en": "Carry-on Bags | United Airlines: archived copy of the airline page captured on 2026-10-11 (Internet Archive), original address https://www.united.com/en/us/fly/baggage/carry-on-bags.html"
+   }
+  },
+  "united-checked": {
+   "url": "https://web.archive.org/web/20261011/https://www.united.com/en/us/fly/baggage/checked-bags.html",
+   "label": {
+    "en": "Checked Bags | United Airlines: archived copy of the airline page captured on 2026-10-11 (Internet Archive), original address https://www.united.com/en/us/fly/baggage/checked-bags.html"
+   }
+  },
+  "southwest-fees": {
+   "url": "https://www.southwest.com/html/customer-service/travel-fees.html",
+   "label": {
+    "en": "Optional Travel Charges | Southwest Airlines, read on 2026-10-26"
+   }
+  },
+  "southwest-carryon": {
+   "url": "https://support.southwest.com/helpcenter/article/carryon-baggage-policy",
+   "label": {
+    "en": "Carryon and Personal Item Policy (Southwest Help Center), read on 2026-10-26"
+   }
+  },
+  "southwest-checked": {
+   "url": "https://support.southwest.com/helpcenter/article/checked-baggage-policy",
+   "label": {
+    "en": "Checked Bag Policy (Southwest Help Center), read on 2026-10-26"
+   }
+  },
+  "alaska-checked": {
+   "url": "https://www.alaskaair.com/content/travel-info/baggage/checked-bags",
+   "label": {
+    "en": "Checked baggage fees and policies - Alaska Airlines and Hawaiian Airlines, read on 2026-10-26"
+   }
+  },
+  "alaska-carryon": {
+   "url": "https://www.alaskaair.com/content/travel-info/baggage/carry-on-luggage",
+   "label": {
+    "en": "Carry-on luggage - Alaska Airlines, read on 2026-10-26"
+   }
+  },
+  "alaska-card": {
+   "url": "https://www.alaskaair.com/atmosrewards/content/credit-cards/faq/free-checked-bag",
+   "label": {
+    "en": "Free Checked Bag Frequently Asked Questions - Atmos Rewards, read on 2026-10-26"
+   }
+  },
+  "jetblue-fees": {
+   "url": "https://www.jetblue.com/legal/fees",
+   "label": {
+    "en": "Optional Services and Fees | JetBlue, read on 2026-10-26"
+   }
+  },
+  "jetblue-terms": {
+   "url": "https://www.jetblue.com/legal/flights-terms",
+   "label": {
+    "en": "Flights Terms | JetBlue, read on 2026-10-26"
+   }
+  },
+  "jetblue-coc": {
+   "url": "https://web.archive.org/web/20261014/https://cms.jetblue.com/public/dam/ui-assets/p/legal/Contract_of_Carriage_2026-06-01.pdf",
+   "label": {
+    "en": "JetBlue Airways Contract of Carriage (2026-06-01 revision, PDF): archived copy of the airline page captured on 2026-10-14 (Internet Archive), original address https://cms.jetblue.com/public/dam/ui-assets/p/legal/Contract_of_Carriage_2026-06-01.pdf"
+   }
+  },
+  "spirit-bags": {
+   "url": "https://web.archive.org/web/20260502/https://customersupport.spirit.com/en-us/category/article/KA-01535",
+   "label": {
+    "en": "Bag Info · Spirit Airlines Support: archived copy of the airline page captured on 2026-05-02 (Internet Archive), original address https://customersupport.spirit.com/en-us/category/article/KA-01535"
+   }
+  },
+  "spirit-coc": {
+   "url": "https://web.archive.org/web/20261008/https://content.spirit.com/Shared/en-us/Documents/Contract_of_Carriage.pdf",
+   "label": {
+    "en": "Spirit Airlines Contract of Carriage, updated as of April 30, 2026 (PDF): archived copy of the airline page captured on 2026-10-08 (Internet Archive), original address https://content.spirit.com/Shared/en-us/Documents/Contract_of_Carriage.pdf"
+   }
+  },
+  "frontier-bags": {
+   "url": "https://www.flyfrontier.com/travel/travel-info/bag-options/",
+   "label": {
+    "en": "Bag Options | Frontier Airlines, read on 2026-10-26"
+   }
+  },
+  "frontier-optional": {
+   "url": "https://www.flyfrontier.com/optional-services/",
+   "label": {
+    "en": "Optional Services | Frontier Airlines, read on 2026-10-26"
+   }
+  },
+  "frontier-military": {
+   "url": "https://faq.flyfrontier.com/help/military-personnel-bags",
+   "label": {
+    "en": "Military Personnel Bags | Frontier Airlines FAQ, read on 2026-10-26"
+   }
+  },
+  "allegiant-fees": {
+   "url": "https://web.archive.org/web/20260930/https://www.allegiantair.com/popup/optional-services-fees",
+   "label": {
+    "en": "Optional Services & Fees | Allegiant: archived copy of the airline page captured on 2026-09-30 (Internet Archive), original address https://www.allegiantair.com/popup/optional-services-fees"
+   }
+  },
+  "hawaiian-checked": {
+   "url": "https://www.hawaiianairlines.com/content/travel-info/baggage/checked-bags",
+   "label": {
+    "en": "Checked baggage fees and policies - Alaska Airlines and Hawaiian Airlines (hawaiianairlines.com), read on 2026-10-26"
+   }
+  },
+  "hawaiian-carryon": {
+   "url": "https://www.hawaiianairlines.com/content/travel-info/baggage/carry-on-luggage",
+   "label": {
+    "en": "Carry-on luggage - Hawaiian Airlines, read on 2026-10-26"
+   }
+  },
+  "tsa-liquids": {
+   "url": "https://www.tsa.gov/travel/security-screening/liquids-aerosols-gels-rule",
+   "label": {
+    "en": "Liquids, Aerosols, and Gels Rule | Transportation Security Administration, read on 2026-10-26"
+   }
+  },
+  "tsa-food": {
+   "url": "https://www.tsa.gov/travel/security-screening/whatcanibring/food",
+   "label": {
+    "en": "Food | Transportation Security Administration (What Can I Bring?), read on 2026-10-26"
+   }
+  },
+  "tsa-powerbanks": {
+   "url": "https://www.tsa.gov/travel/security-screening/whatcanibring/items/power-banks",
+   "label": {
+    "en": "Power Banks | Transportation Security Administration, read on 2026-10-26"
+   }
+  },
+  "tsa-batteries": {
+   "url": "https://www.tsa.gov/travel/security-screening/whatcanibring/items/lithium-batteries-100-watt-hours-or-less-device",
+   "label": {
+    "en": "Lithium batteries with 100 watt hours or less in a device | Transportation Security Administration, read on 2026-10-26"
+   }
+  },
+  "faa-packsafe": {
+   "url": "https://www.faa.gov/hazmat/packsafe/lithium-batteries",
+   "label": {
+    "en": "PackSafe - Lithium Batteries | Federal Aviation Administration, read on 2026-10-26"
+   }
+  },
+  "ryanair-fees": {
+   "url": "https://www.ryanair.com/gb/en/useful-info/help-centre/fees",
+   "label": {
+    "en": "Ryanair Help Centre - Fees (table of optional fees), read on 2026-10-26"
+   }
+  },
+  "ryanair-terms": {
+   "url": "https://www.ryanair.com/gb/en/useful-info/help-centre/terms-and-conditions",
+   "label": {
+    "en": "Ryanair Help Centre - Terms and Conditions / General Terms of Carriage & Regulations, read on 2026-10-26"
+   }
+  },
+  "easyjet-cabin": {
+   "url": "https://www.easyjet.com/en/help/baggage/cabin-bag-and-hold-luggage",
+   "label": {
+    "en": "easyJet Help - Cabin bags, read on 2026-10-26"
+   }
+  },
+  "easyjet-hold": {
+   "url": "https://www.easyjet.com/en/help/baggage/hold-luggage",
+   "label": {
+    "en": "easyJet Help - Hold luggage, read on 2026-10-26"
+   }
+  },
+  "easyjet-fees": {
+   "url": "https://www.easyjet.com/en/help-centre/policy-terms-and-conditions/fees-charges",
+   "label": {
+    "en": "easyJet - Fees and charges, read on 2026-10-26"
+   }
+  },
+  "easyjet-dg": {
+   "url": "https://www.easyjet.com/en/help-centre/baggage/dangerous-goods",
+   "label": {
+    "en": "easyJet - Dangerous goods, read on 2026-10-26"
+   }
+  },
+  "jet2-bags": {
+   "url": "https://web.archive.org/web/20261001/https://www.jet2.com/en/baggage",
+   "label": {
+    "en": "Jet2.com - Baggage: archived copy of the airline page captured on 2026-10-01 (Internet Archive), original address https://www.jet2.com/en/baggage"
+   }
+  },
+  "jet2-dg": {
+   "url": "https://web.archive.org/web/20260512/https://www.jet2.com/en/dangerous-goods",
+   "label": {
+    "en": "Jet2.com - Dangerous goods: archived copy of the airline page captured on 2026-05-12 (Internet Archive), original address https://www.jet2.com/en/dangerous-goods"
+   }
+  },
+  "ba-bags": {
+   "url": "https://web.archive.org/web/20260930/https://www.britishairways.com/content/information/baggage-essentials",
+   "label": {
+    "en": "British Airways - Baggage essentials: archived copy of the airline page captured on 2026-09-30 (Internet Archive), original address https://www.britishairways.com/content/information/baggage-essentials"
+   }
+  },
+  "ba-restrictions": {
+   "url": "https://web.archive.org/web/20260911/https://www.britishairways.com/content/information/baggage-essentials/liquids-and-restrictions",
+   "label": {
+    "en": "British Airways - Liquids and restrictions (battery policy): archived copy of the airline page captured on 2026-09-11 (Internet Archive), original address https://www.britishairways.com/content/information/baggage-essentials/liquids-and-restrictions"
+   }
+  },
+  "wizz-allowance": {
+   "url": "https://wizzair.com/en-gb/help-centre/booking-information-and-services/baggage/baggage-allowance",
+   "label": {
+    "en": "Wizz Air Help Centre - Baggage allowance, read on 2026-10-26"
+   }
+  },
+  "wizz-cabin": {
+   "url": "https://wizzair.com/en-gb/help-centre/booking-information-and-services/baggage/baggage-allowance/cabin-baggage",
+   "label": {
+    "en": "Wizz Air Help Centre - Cabin baggage, read on 2026-10-26"
+   }
+  },
+  "wizz-checked": {
+   "url": "https://wizzair.com/en-gb/help-centre/booking-information-and-services/baggage/baggage-allowance/checked-in-baggage",
+   "label": {
+    "en": "Wizz Air Help Centre - Checked-in baggage, read on 2026-10-26"
+   }
+  },
+  "wizz-restricted": {
+   "url": "https://wizzair.com/en-gb/help-centre/restricted-items",
+   "label": {
+    "en": "Wizz Air Help Centre - Restricted items on board, read on 2026-10-26"
+   }
+  },
+  "tui-luggage": {
+   "url": "https://www.tui.co.uk/destinations/info/luggage-allowance",
+   "label": {
+    "en": "TUI - Luggage allowance on TUI Airways, read on 2026-10-26"
+   }
+  },
+  "va-hand": {
+   "url": "https://web.archive.org/web/20250529/https://help.virginatlantic.com/gb/en/baggage/hand-baggage.html",
+   "label": {
+    "en": "Virgin Atlantic help centre - Hand baggage allowance: archived copy of the airline page captured on 2025-05-29 (Internet Archive), original address https://help.virginatlantic.com/gb/en/baggage/hand-baggage.html"
+   }
+  },
+  "va-checked": {
+   "url": "https://web.archive.org/web/20250628/https://help.virginatlantic.com/gb/en/baggage/check-in-baggage-allowance.html",
+   "label": {
+    "en": "Virgin Atlantic help centre - Check in baggage, additional and overweight baggage: archived copy of the airline page captured on 2025-06-28 (Internet Archive), original address https://help.virginatlantic.com/gb/en/baggage/check-in-baggage-allowance.html"
+   }
+  },
+  "govuk": {
+   "url": "https://www.gov.uk/hand-luggage-restrictions/print",
+   "label": {
+    "en": "GOV.UK - Hand luggage restrictions at UK airports (printable guide), read on 2026-10-26"
+   }
+  },
+  "caa-packright": {
+   "url": "https://www.caa.co.uk/packright",
+   "label": {
+    "en": "UK CAA - Pack right. Safe flight., read on 2026-10-26"
+   }
+  },
+  "ap-lhr": {
+   "url": "https://www.heathrow.com/at-the-airport/security-and-baggage/hand-baggage-and-liquids",
+   "label": {
+    "en": "Heathrow Airport security page, read on 2026-10-26"
+   }
+  },
+  "ap-lgw": {
+   "url": "https://www.gatwickairport.com/passenger-guides/security.html",
+   "label": {
+    "en": "Gatwick Airport security page, read on 2026-10-26"
+   }
+  },
+  "ap-stn": {
+   "url": "https://www.stanstedairport.com/help/security/",
+   "label": {
+    "en": "London Stansted Airport security page, read on 2026-10-26"
+   }
+  },
+  "ap-ltn": {
+   "url": "https://www.london-luton.co.uk/inside-lla/security",
+   "label": {
+    "en": "London Luton Airport security page, read on 2026-10-26"
+   }
+  },
+  "ap-man": {
+   "url": "https://www.manchesterairport.co.uk/help/security/",
+   "label": {
+    "en": "Manchester Airport security page, read on 2026-10-26"
+   }
+  },
+  "ap-bhx": {
+   "url": "https://web.archive.org/web/20260825/https://www.birminghamairport.co.uk/important-updates-customer-advice-on-liquids-when-travelling-out-of-birmingham-airport/",
+   "label": {
+    "en": "Birmingham Airport security page: archived copy of the airline page captured on 2026-08-25 (Internet Archive), original address https://www.birminghamairport.co.uk/important-updates-customer-advice-on-liquids-when-travelling-out-of-birmingham-airport/"
+   }
+  },
+  "ap-edi": {
+   "url": "https://www.edinburghairport.com/prepare/airport-security/liquids-food-items-electricals",
+   "label": {
+    "en": "Edinburgh Airport security page, read on 2026-10-26"
+   }
+  },
+  "ap-brs": {
+   "url": "https://web.archive.org/web/20261008/https://www.bristolairport.co.uk/at-the-airport/security/",
+   "label": {
+    "en": "Bristol Airport security page: archived copy of the airline page captured on 2026-10-08 (Internet Archive), original address https://www.bristolairport.co.uk/at-the-airport/security/"
+   }
+  },
+  "ap-ncl": {
+   "url": "https://web.archive.org/web/20260628/https://www.newcastleairport.com/at-the-airport/security-faqs/",
+   "label": {
+    "en": "Newcastle Airport security page: archived copy of the airline page captured on 2026-06-28 (Internet Archive), original address https://www.newcastleairport.com/at-the-airport/security-faqs/"
+   }
+  },
+  "ap-abz": {
+   "url": "https://www.aberdeenairport.com/aberdeen-airport-guide/airport-security/hand-baggage/",
+   "label": {
+    "en": "Aberdeen Airport security page, read on 2026-10-26"
+   }
+  },
+  "ap-bfs": {
+   "url": "https://web.archive.org/web/20260422/https://www.belfastairport.com/airport-guide/security/hand-luggage",
+   "label": {
+    "en": "Belfast International Airport security page: archived copy of the airline page captured on 2026-04-22 (Internet Archive), original address https://www.belfastairport.com/airport-guide/security/hand-luggage"
+   }
+  },
+  "ap-lcy": {
+   "url": "https://web.archive.org/web/20260729/https://www.londoncityairport.com/at-the-airport/need-to-know/security-baggage",
+   "label": {
+    "en": "London City Airport security page: archived copy of the airline page captured on 2026-07-29 (Internet Archive), original address https://www.londoncityairport.com/at-the-airport/need-to-know/security-baggage"
+   }
+  },
+  "ap-lba": {
+   "url": "https://www.leedsbradfordairport.co.uk/help/security",
+   "label": {
+    "en": "Leeds Bradford Airport security page, read on 2026-10-26"
+   }
+  },
+  "ap-lpl": {
+   "url": "https://www.liverpoolairport.com/prepare/security/baggage-information",
+   "label": {
+    "en": "Liverpool John Lennon Airport security page, read on 2026-10-26"
+   }
+  },
+  "ap-ema": {
+   "url": "https://www.eastmidlandsairport.com/help/security/",
+   "label": {
+    "en": "East Midlands Airport security page, read on 2026-10-26"
+   }
+  },
+  "ap-sou": {
+   "url": "https://www.southamptonairport.com/at-the-airport/security-screening/security-faqs/",
+   "label": {
+    "en": "Southampton Airport security page, read on 2026-10-26"
+   }
+  },
+  "ap-mme": {
+   "url": "https://www.teessideinternational.com/at-the-airport/preparing-for-security/",
+   "label": {
+    "en": "Teesside Airport security page, read on 2026-10-26"
+   }
+  },
+  "houston-spirit": {
+   "url": "https://www.fly2houston.com/airport-business/newsroom/press-releases/item/spirit-airlines-ceases-operations-at-bush-airport/",
+   "label": {
+    "en": "Houston Airports press release: Spirit Airlines ceases operations at Bush Airport, May 2, 2026, read on 2026-10-26"
+   }
+  }
+ },
+ "rules": {
+  "tsa": {
+   "oz": 3.4,
+   "ml": 100,
+   "bag": "quart-sized bag",
+   "note": "Larger liquids go in checked bags. Medicines, baby formula, breast milk and baby food over 3.4 oz are allowed in carry-on and need not fit in the bag.",
+   "src": "tsa-liquids"
+  },
+  "tsaFood": {
+   "alcoholMinPct": 24,
+   "alcoholMaxPct": 70,
+   "alcoholLitres": 5,
+   "src": "tsa-food"
+  },
+  "uk": {
+   "ml": 100,
+   "bigMl": 2000,
+   "bagL": 1,
+   "bagCm": [
+    20,
+    20
+   ],
+   "bag": "one clear resealable bag of about 1 litre (about 20 × 20 cm), unless the airport says otherwise",
+   "bigBag": "no plastic bag needed, liquids stay in your bag",
+   "note100": "This airport keeps the 100 ml limit per container. Medicines, special-diet food and baby milk up to 2 litres are allowed at every UK airport.",
+   "noteLarge": "This airport’s own page states the larger limit. Your return airport may still apply 100 ml.",
+   "airports": [
+    {
+     "code": "LHR",
+     "name": "Heathrow",
+     "rule": "large",
+     "maxMl": 2000,
+     "bag": "no plastic bag needed, liquids stay in your bag",
+     "summary": "Liquids up to 2 litres per container; leave liquids, laptops and tablets in the cabin bag.",
+     "readOn": "2026-10-26",
+     "via": "live",
+     "src": "ap-lhr"
+    },
+    {
+     "code": "LGW",
+     "name": "Gatwick",
+     "rule": "large",
+     "maxMl": 2000,
+     "bag": "no plastic bag needed, liquids stay in your bag",
+     "summary": "Liquids up to 2 litres per container stay in hand luggage; laptops and large electricals stay in the bag.",
+     "readOn": "2026-10-26",
+     "via": "live",
+     "src": "ap-lgw"
+    },
+    {
+     "code": "STN",
+     "name": "London Stansted",
+     "rule": "100ml",
+     "maxMl": 100,
+     "bag": "no plastic bag needed, liquids stay in your bag",
+     "summary": "100ml per container; liquids and electrical items can stay in hand luggage.",
+     "readOn": "2026-10-26",
+     "via": "live",
+     "src": "ap-stn"
+    },
+    {
+     "code": "LTN",
+     "name": "London Luton",
+     "rule": "100ml",
+     "maxMl": 100,
+     "bag": "no plastic bag needed, liquids stay in your bag",
+     "summary": "100ml per container; liquids and large electronics stay in the bag; no plastic bag needed.",
+     "readOn": "2026-10-26",
+     "via": "live",
+     "src": "ap-ltn"
+    },
+    {
+     "code": "MAN",
+     "name": "Manchester",
+     "rule": "100ml",
+     "maxMl": 100,
+     "bag": "no plastic bag needed, liquids stay in your bag",
+     "summary": "100ml per container; liquids and electricals can stay in hand luggage; no plastic bag.",
+     "readOn": "2026-10-26",
+     "via": "live",
+     "src": "ap-man"
+    },
+    {
+     "code": "BHX",
+     "name": "Birmingham",
+     "rule": "large",
+     "maxMl": 2000,
+     "bag": "no plastic bag needed, liquids stay in your bag",
+     "summary": "Liquids up to 2 litres per container, no limit on number; leave liquids loose in hand luggage, no plastic bags; electricals stay in.",
+     "readOn": "2026-08-25",
+     "via": "wayback",
+     "src": "ap-bhx"
+    },
+    {
+     "code": "EDI",
+     "name": "Edinburgh",
+     "rule": "large",
+     "maxMl": 2000,
+     "bag": "no plastic bag needed, liquids stay in your bag",
+     "summary": "Liquids up to 2 litres per container, multiple containers allowed; liquids stay in the bag.",
+     "readOn": "2026-10-26",
+     "via": "live",
+     "src": "ap-edi"
+    },
+    {
+     "code": "BRS",
+     "name": "Bristol",
+     "rule": "large",
+     "maxMl": 2000,
+     "bag": "no plastic bag needed, liquids stay in your bag",
+     "summary": "Liquids up to 2 litres per container; keep liquids and laptops in the bag; no clear plastic bag.",
+     "readOn": "2026-10-08",
+     "via": "wayback",
+     "src": "ap-brs"
+    },
+    {
+     "code": "NCL",
+     "name": "Newcastle",
+     "rule": "100ml",
+     "maxMl": 100,
+     "bag": "no plastic bag needed, liquids stay in your bag",
+     "summary": "100ml per container; liquids and laptops can stay in hand baggage; no clear plastic bag.",
+     "readOn": "2026-06-28",
+     "via": "wayback",
+     "src": "ap-ncl"
+    },
+    {
+     "code": "ABZ",
+     "name": "Aberdeen",
+     "rule": "100ml",
+     "maxMl": 100,
+     "bag": "no plastic bag needed, liquids stay in your bag",
+     "summary": "100ml per container; liquids can stay in cabin baggage without a liquid bag; unlimited 100ml containers.",
+     "readOn": "2026-10-26",
+     "via": "live",
+     "src": "ap-abz"
+    },
+    {
+     "code": "BFS",
+     "name": "Belfast International",
+     "rule": "large",
+     "maxMl": 2000,
+     "bag": "no plastic bag needed, liquids stay in your bag",
+     "summary": "Liquids up to 2 litres stay in hand luggage; all electronics stay in; plastic bags no longer required.",
+     "readOn": "2026-04-22",
+     "via": "wayback",
+     "src": "ap-bfs"
+    },
+    {
+     "code": "LCY",
+     "name": "London City",
+     "rule": "100ml",
+     "maxMl": 100,
+     "bag": "no plastic bag needed, liquids stay in your bag",
+     "summary": "100ml per container; leave liquids, laptops and tablets in hand luggage; no plastic bags.",
+     "readOn": "2026-07-29",
+     "via": "wayback",
+     "src": "ap-lcy"
+    },
+    {
+     "code": "LBA",
+     "name": "Leeds Bradford",
+     "rule": "100ml",
+     "maxMl": 100,
+     "bag": "no plastic bag needed, liquids stay in your bag",
+     "summary": "100ml per container; keep liquids and electronics in hand luggage; no plastic bag.",
+     "readOn": "2026-10-26",
+     "via": "live",
+     "src": "ap-lba"
+    },
+    {
+     "code": "LPL",
+     "name": "Liverpool John Lennon",
+     "rule": "100ml",
+     "maxMl": 100,
+     "bag": "no plastic bag needed, liquids stay in your bag",
+     "summary": "100ml per container; liquids stay in hand luggage without a clear plastic bag.",
+     "readOn": "2026-10-26",
+     "via": "live",
+     "src": "ap-lpl"
+    },
+    {
+     "code": "EMA",
+     "name": "East Midlands",
+     "rule": "100ml",
+     "maxMl": 100,
+     "bag": "no plastic bag needed, liquids stay in your bag",
+     "summary": "100ml per container; liquids and electrical items can stay in hand luggage; no plastic bag.",
+     "readOn": "2026-10-26",
+     "via": "live",
+     "src": "ap-ema"
+    },
+    {
+     "code": "SOU",
+     "name": "Southampton",
+     "rule": "100ml",
+     "maxMl": 100,
+     "bag": "check the airport page for the bag rule",
+     "summary": "100ml per container, no limit on number; pack liquids directly in hand luggage, no resealable bag.",
+     "readOn": "2026-10-26",
+     "via": "live",
+     "src": "ap-sou"
+    },
+    {
+     "code": "MME",
+     "name": "Teesside",
+     "rule": "100ml",
+     "maxMl": 100,
+     "bag": "no plastic bag needed, liquids stay in your bag",
+     "summary": "100ml per container, unlimited number; no plastic bag; liquids stay in bags for screening.",
+     "readOn": "2026-10-26",
+     "via": "live",
+     "src": "ap-mme"
+    }
+   ],
+   "src": "govuk"
+  },
+  "batteries": {
+   "noApprovalWh": 100,
+   "approvalWh": 160,
+   "approvalMaxSpares": 2,
+   "lithiumMetalG": 2,
+   "ukMaxPowerBanks": 2,
+   "noteUs": "FAA PackSafe: spare lithium batteries and power banks travel in the cabin only.",
+   "noteUk": "CAA: at most two power banks per person, never recharged on board.",
+   "src": "faa-packsafe"
+  },
+  "powerBankAirlines": [
+   {
+    "airline": "Ryanair",
+    "maxPerPassenger": 2,
+    "maxWh": 100,
+    "useOnboard": "allowed to charge devices except during taxi, take-off and landing; power banks may not be recharged onboard",
+    "src": "ryanair-terms",
+    "quote": "Power banks are limited to a maximum of 2 per passenger [...] Power banks cannot be recharged at any time when onboard/ during the flight (e.g., one power bank charging another). Power banks may be used to charge personal electronic devices, except during taxi, take-off, and landing, or when instructed otherwise by the crew. Power banks and spare lithium batteries cannot be placed in cabin baggage stored in the overhead lockers. [...] Devices or batteries over 100Wh are not permitted, neither in the cabin nor the hold (with the exception of Electric Wheelchair batteries)."
+   },
+   {
+    "airline": "easyJet",
+    "maxPerPassenger": 2,
+    "maxWh": 160,
+    "useOnboard": "prohibited (must not be used to charge other devices)",
+    "src": "easyjet-dg",
+    "quote": "Power banks are accepted on easyJet aircraft with a Wh rating not exceeding 160Wh for lithium batteries. Power banks are prohibited from use on easyJet aircraft and must not be used to charge other devices. [...] Maximum of two power banks permitted per customer. Power banks must be carried in carry-on baggage only"
+   },
+   {
+    "airline": "Jet2",
+    "maxPerPassenger": 2,
+    "maxWh": 160,
+    "useOnboard": "must not be charged onboard and should not be used in-flight (same page also says not to charge devices during taxi, take-off and landing)",
+    "src": "jet2-dg",
+    "quote": "Customers may carry no more than 2 power banks per person, not exceeding 160Wh, providing they are individually protected against short circuit. In all cases: these must not be charged whilst onboard the aircraft, and should not be used in-flight."
+   },
+   {
+    "airline": "British Airways",
+    "maxPerPassenger": 2,
+    "maxWh": 100,
+    "useOnboard": "seat power may not be used to charge power banks; power banks stored in seat pocket or under-seat bag (no explicit ban on using them to charge devices)",
+    "src": "ba-restrictions",
+    "quote": "Power bank limits: Up to 2 power banks per person Power banks must display capacity rating information. Aircraft seat power supplies are to be used exclusively for charging personal electronic devices (PEDs), not power banks. Power banks must be stored either in the seat pocket or in a bag placed under the seat in front. Power banks must not exceed 100Wh"
+   },
+   {
+    "airline": "Wizz Air",
+    "maxPerPassenger": 1,
+    "maxWh": 100,
+    "useOnboard": "prohibited during the whole flight",
+    "src": "wizz-restricted",
+    "quote": "Power banks are not to be used during any phase of the flight duration! [...] Each person is limited to a maximum of 20 spare batteries, including maximum 1 power bank. Power banks exceeding 100 Wh are forbidden."
+   }
+  ]
+ }
+}

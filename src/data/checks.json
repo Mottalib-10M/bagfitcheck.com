@@ -1,0 +1,649 @@
+{
+ "checks": [
+  {
+   "id": "american-personal-quote",
+   "url": "https://www.aa.com/i18n/travel-info/baggage/carry-on-baggage.jsp",
+   "quote": "Dimensions should not exceed 18 x 14 x 8 inches (45 x 35 x 20 cm)."
+  },
+  {
+   "id": "american-carry-quote",
+   "url": "https://www.aa.com/i18n/travel-info/baggage/carry-on-baggage.jsp",
+   "quote": "The total size of your carry-on, including the handles and wheels, cannot exceed 22 x 14 x 9 inches (56 x 36 x 23 cm) and must fit in the sizer at the airport."
+  },
+  {
+   "id": "american-checked-quote",
+   "url": "https://www.aa.com/i18n/travel-info/baggage/checked-baggage-policy.jsp",
+   "quote": "1st checked bag fee is $50 ($45 if you pay online) and the 2nd checked bag fee is $60 ($55 if you pay online). Pay $5 more for 1st and 2nd checked bag fees for Basic Economy tickets."
+  },
+  {
+   "id": "american-checked-quoteSize",
+   "url": "https://www.aa.com/i18n/travel-info/baggage/checked-baggage-policy.jsp",
+   "quote": "Dimension: 62 in / 158 cm"
+  },
+  {
+   "id": "american-checked-quoteWeight",
+   "url": "https://www.aa.com/i18n/travel-info/baggage/checked-baggage-policy.jsp",
+   "quote": "Weight: 50 lbs / 23 kgs"
+  },
+  {
+   "id": "american-checked-quoteThird",
+   "url": "https://www.aa.com/i18n/travel-info/baggage/checked-baggage-policy.jsp",
+   "quote": "A $200 3rd checked bag fee applies for tickets issued on / after April 9, 2026 within / between the U.S. (including HI / AK), Puerto Rico, U.S. Virgin Islands, and Canada."
+  },
+  {
+   "id": "american-checked-quoteBasic",
+   "url": "https://www.aa.com/i18n/travel-info/baggage/checked-baggage-policy.jsp",
+   "quote": "A $55 1st checked bag fee ($50 if paid online) applies within / between the U.S. (including HI / AK), Puerto Rico, U.S. Virgin Islands, Canada, Mexico, Caribbean (except Cuba and Haiti), Central America (except Panama) and Guyana for tickets issued on / after May 18, 2026"
+  },
+  {
+   "id": "american-checked-quoteBasic2",
+   "url": "https://www.aa.com/i18n/travel-info/baggage/checked-baggage-policy.jsp",
+   "quote": "A $65 2nd checked bag fee ($60 if paid online) applies within / between the U.S. (including HI / AK), Puerto Rico, U.S. Virgin Islands, Canada, Mexico, Caribbean (except Cuba and Haiti), Central America (except Panama) and Guyana for tickets issued on / after May 18, 2026"
+  },
+  {
+   "id": "american-over",
+   "url": "https://www.aa.com/i18n/travel-info/baggage/oversize-and-overweight-baggage.jsp",
+   "quote": "Between U.S., Puerto Rico, U.S. Virgin Islands and Canada $30 $100 $200"
+  },
+  {
+   "id": "delta-personal-quote",
+   "url": "https://www.delta.com/us/en/baggage/carry-on-baggage",
+   "quote": "Pick an item like this or of a similar size to store beneath the seat in front of you during your flight."
+  },
+  {
+   "id": "delta-carry-quote",
+   "url": "https://www.delta.com/us/en/baggage/carry-on-baggage",
+   "quote": "Individual length, width and height measurements may not exceed 22” x 14” x 9” (56 cm x 35 cm x 23 cm) respectively"
+  },
+  {
+   "id": "delta-carry-quote2",
+   "url": "https://www.delta.com/us/en/baggage/carry-on-baggage",
+   "quote": "Combined length + width + height of baggage must not exceed 45 linear inches (114 cm)"
+  },
+  {
+   "id": "delta-carry-quoteBasic",
+   "url": "https://www.delta.com/us/en/baggage/carry-on-baggage",
+   "quote": "Each passenger flying with Delta can bring 1 carry-on bag and 1 personal item free of charge"
+  },
+  {
+   "id": "delta-checked-quote",
+   "url": "https://www.delta.com/us/en/baggage/overview",
+   "quote": "$45 USD For your first standard checked bag under 50 lbs. (23 kg), each way"
+  },
+  {
+   "id": "delta-checked-quote2",
+   "url": "https://www.delta.com/us/en/baggage/overview",
+   "quote": "$55 USD For your second standard checked bag under 50 lbs. (23 kg), each way"
+  },
+  {
+   "id": "delta-checked-quoteSize",
+   "url": "https://www.delta.com/us/en/baggage/overview",
+   "quote": "Baggage size must not exceed 62 inches (157 cm) when you total LENGTH + WIDTH + HEIGHT"
+  },
+  {
+   "id": "delta-checked-quoteThird",
+   "url": "https://www.delta.com/us/en/baggage/overview",
+   "quote": "3rd Checked Bag $200 USD Bags 4 to 10 $200 USD each"
+  },
+  {
+   "id": "delta-perks-cardQuote",
+   "url": "https://www.delta.com/us/en/baggage/checked-baggage/medallion-baggage-allowance",
+   "quote": "The benefit extends to up to 8 travel companions, who must be listed on the Card Member’s reservation – for a total of 9 passengers."
+  },
+  {
+   "id": "delta-over",
+   "url": "https://www.delta.com/us/en/baggage/checked-baggage/excess-overweight-baggage",
+   "quote": "51-70 lbs. (23 kg – 31.75 kg) - $100 USD/CAD* 71-<100 lbs. (32 kg – 45.36 kg) - $200 USD/CAD* Bags 100 lbs. (45.36 kg) or more are not permitted"
+  },
+  {
+   "id": "united-personal-quote",
+   "url": "https://www.united.com/en/us/fly/baggage/carry-on-bags.html",
+   "quote": "These items must fit under the seat in front of you, so they must be 9 in x 10 in x 17 in (22 cm x 25 cm x 43 cm)."
+  },
+  {
+   "id": "united-carry-quote",
+   "url": "https://www.united.com/en/us/fly/baggage/carry-on-bags.html",
+   "quote": "Your carry-on bag must fit in the overhead bin, so it must be 9 in x 14 in x 22 in (23 cm x 35 cm x 56 cm)."
+  },
+  {
+   "id": "united-carry-quoteBasic",
+   "url": "https://www.united.com/en/us/fly/baggage/carry-on-bags.html",
+   "quote": "For tickets purchased on or after April 3, 2026, bag fees start at $50 if you check it in the airport lobby and $75 if you check it at the gate."
+  },
+  {
+   "id": "united-carry-quoteBasicSrc",
+   "url": "https://www.united.com/en/us/fly/baggage/carry-on-bags.html",
+   "quote": "united-checked"
+  },
+  {
+   "id": "united-checked-quote",
+   "url": "https://www.united.com/en/us/fly/baggage/carry-on-bags.html",
+   "quote": "For tickets purchased on or after April 3, 2026, bag fees start at $45 if you prepay, $50 in the lobby and $75 at the gate."
+  },
+  {
+   "id": "united-checked-quoteSize",
+   "url": "https://www.united.com/en/us/fly/baggage/carry-on-bags.html",
+   "quote": "The maximum size of a checked bag can be 30 in x 20 in x 12 in (76 cm x 52 cm x 30 cm) or 62 total in., including handles and wheels."
+  },
+  {
+   "id": "united-checked-quoteWeight",
+   "url": "https://www.united.com/en/us/fly/baggage/carry-on-bags.html",
+   "quote": "50 pounds (23 kilograms)"
+  },
+  {
+   "id": "united-over",
+   "url": "https://www.united.com/en/us/fly/baggage/checked-bags.html",
+   "quote": "We can’t accept bags weighing more than 100 pounds (45 kilograms)."
+  },
+  {
+   "id": "southwest-personal-quote",
+   "url": "https://support.southwest.com/helpcenter/article/carryon-baggage-policy",
+   "quote": "Goes under the seat in front of you."
+  },
+  {
+   "id": "southwest-carry-quote",
+   "url": "https://www.southwest.com/html/customer-service/travel-fees.html",
+   "quote": "one carryon bag (e.g., roller bag, garment bag, tote bag) that does not exceed external dimensions of 10 x 16 x 24"
+  },
+  {
+   "id": "southwest-carry-quote2",
+   "url": "https://www.southwest.com/html/customer-service/travel-fees.html",
+   "quote": "Size limit: 24” (length) × 16” (width) × 10” (height)."
+  },
+  {
+   "id": "southwest-carry-quote2Src",
+   "url": "https://www.southwest.com/html/customer-service/travel-fees.html",
+   "quote": "southwest-carryon"
+  },
+  {
+   "id": "southwest-checked-quote",
+   "url": "https://www.southwest.com/html/customer-service/travel-fees.html",
+   "quote": "Basic Fare Free $45 $55"
+  },
+  {
+   "id": "southwest-checked-quoteThird",
+   "url": "https://www.southwest.com/html/customer-service/travel-fees.html",
+   "quote": "3rd+ Checked Bag $150"
+  },
+  {
+   "id": "southwest-checked-quoteWeight",
+   "url": "https://www.southwest.com/html/customer-service/travel-fees.html",
+   "quote": "Up to 50 pounds each"
+  },
+  {
+   "id": "southwest-checked-quoteSize",
+   "url": "https://www.southwest.com/html/customer-service/travel-fees.html",
+   "quote": "62 inches in size (length + width + height)."
+  },
+  {
+   "id": "southwest-over",
+   "url": "https://www.southwest.com/html/customer-service/travel-fees.html",
+   "quote": "In addition to the standard baggage fee, Overweight items from 51-70 pounds will cost $100. Overweight items 71-100 pounds will cost $200. Oversized items in excess of 62 inches but not more than 80 inches will be accepted for a charge of $200 per item plus the standard baggage fee."
+  },
+  {
+   "id": "alaska-personal-quote",
+   "url": "https://www.alaskaair.com/content/travel-info/baggage/carry-on-luggage",
+   "quote": "One small personal item such as a purse, briefcase, or laptop bag, and medically necessary items will be allowed on board."
+  },
+  {
+   "id": "alaska-carry-quote",
+   "url": "https://www.alaskaair.com/content/travel-info/baggage/carry-on-luggage",
+   "quote": "One piece of carry-on sized luggage (maximum dimension 22\" x 14\" x 9\" or 45 linear inches, including wheels and handle) will be allowed free of charge."
+  },
+  {
+   "id": "alaska-checked-quote",
+   "url": "https://www.alaskaair.com/content/travel-info/baggage/checked-bags",
+   "quote": "North America | $45 USD Up to 50 lbs. and 62 linear inches | $55 USD Up to 50 lbs. and 62 linear inches"
+  },
+  {
+   "id": "alaska-checked-quoteThird",
+   "url": "https://www.alaskaair.com/content/travel-info/baggage/checked-bags",
+   "quote": "Standard bag | Free | $45 USD | $55 USD | $200 USD | $200 USD per bag | $100 USD per bag | $200 USD per bag | $200 USD per bag"
+  },
+  {
+   "id": "alaska-perks-cardQuote",
+   "url": "https://www.alaskaair.com/content/travel-info/baggage/checked-bags",
+   "quote": "up to 6 guests traveling on the same reservation"
+  },
+  {
+   "id": "alaska-over",
+   "url": "https://www.alaskaair.com/content/travel-info/baggage/checked-bags",
+   "quote": "Standard bag | Free | $45 USD | $55 USD | $200 USD | $200 USD per bag | $100 USD per bag | $200 USD per bag | $200 USD per bag"
+  },
+  {
+   "id": "jetblue-personal-quote",
+   "url": "https://www.jetblue.com/legal/flights-terms",
+   "quote": "Personal items must fit under the seat in front of you and may not exceed 17\" L (43.2 cm) x 13\" W (33 cm) x 8\" H (20.32 cm)."
+  },
+  {
+   "id": "jetblue-carry-quote",
+   "url": "https://www.jetblue.com/legal/flights-terms",
+   "quote": "All fares include both a carry-on bag and personal item. Carry-on bags may not exceed 22\" L (55.88 cm) x 14\" W (35.56 cm) x 9\" H (22.86 cm)."
+  },
+  {
+   "id": "jetblue-checked-quote",
+   "url": "https://www.jetblue.com/legal/fees",
+   "quote": "1st Bag: $45 (incl $4 savings) 2nd Bag: $59 (incl $10 savings)"
+  },
+  {
+   "id": "jetblue-checked-quotePeak",
+   "url": "https://www.jetblue.com/legal/fees",
+   "quote": "1st Bag: $49 (incl $10 savings) 2nd Bag: $69 (incl $10 savings)"
+  },
+  {
+   "id": "jetblue-checked-quoteThird",
+   "url": "https://www.jetblue.com/legal/fees",
+   "quote": "The fee for 3rd (or more) checked bag is $200."
+  },
+  {
+   "id": "jetblue-checked-quoteAirport",
+   "url": "https://www.jetblue.com/legal/fees",
+   "quote": "For Blue Basic Fares, Blue Fares, and Blue Extra Fares, purchased on or after March 27, 2026, one (1) piece of baggage that meets the weight and size limitations set forth in Section 12 is subject to a charge of Forty Nine Dollars ($49)."
+  },
+  {
+   "id": "jetblue-checked-quoteAirport2",
+   "url": "https://www.jetblue.com/legal/fees",
+   "quote": "a second piece of checked baggage that meets the weight and size limitations set forth in Section 12 is subject to a charge of Sixty Nine Dollars ($69)."
+  },
+  {
+   "id": "jetblue-checked-quoteSize",
+   "url": "https://www.jetblue.com/legal/fees",
+   "quote": "does not exceed sixty-two (62) inches for any individual piece or sporting equipment as described in Section 13B and weighing less than 51 pounds or 23 kg."
+  },
+  {
+   "id": "jetblue-over",
+   "url": "https://www.jetblue.com/legal/fees",
+   "quote": "51 - 70 pounds (23.1 - 31.8 kg) Price: $150/£120/€140"
+  },
+  {
+   "id": "spirit-personal-quote",
+   "url": "https://content.spirit.com/Shared/en-us/Documents/Contract_of_Carriage.pdf",
+   "quote": "the item does not exceed the dimensions of 18 inches by 14 inches by 8 inches (45 cm x 35 cm x 20 cm) including handles and wheels."
+  },
+  {
+   "id": "spirit-carry-quote",
+   "url": "https://content.spirit.com/Shared/en-us/Documents/Contract_of_Carriage.pdf",
+   "quote": "not be more than 22 inches by 18 inches by 10 inches (56 cm x 46 cm x 25 cm) including handles and wheels."
+  },
+  {
+   "id": "spirit-carry-quoteBasic",
+   "url": "https://content.spirit.com/Shared/en-us/Documents/Contract_of_Carriage.pdf",
+   "quote": "Value travel option does not include a carry-on bag, but one may be purchased separately."
+  },
+  {
+   "id": "spirit-carry-quoteBasicSrc",
+   "url": "https://content.spirit.com/Shared/en-us/Documents/Contract_of_Carriage.pdf",
+   "quote": "spirit-bags"
+  },
+  {
+   "id": "spirit-checked-quote",
+   "url": "https://customersupport.spirit.com/en-us/category/article/KA-01535",
+   "quote": "Maximum of 62 linear inches (length + width + height; 158 cm) including handles and wheels and maximum of 50 pounds (22.6 kg) in weight."
+  },
+  {
+   "id": "spirit-over",
+   "url": "https://customersupport.spirit.com/en-us/category/article/KA-01535",
+   "quote": "subject to overweight baggage charges beginning at 51lbs (23 kg)."
+  },
+  {
+   "id": "frontier-personal-quote",
+   "url": "https://www.flyfrontier.com/travel/travel-info/bag-options/",
+   "quote": "18in by 14in by 8in and up to 35lb including handles, wheels and straps"
+  },
+  {
+   "id": "frontier-carry-quote",
+   "url": "https://www.flyfrontier.com/travel/travel-info/bag-options/",
+   "quote": "24in by 16in by 10in and up to 35lb including handles, wheels and straps"
+  },
+  {
+   "id": "frontier-checked-quote",
+   "url": "https://www.flyfrontier.com/travel/travel-info/bag-options/",
+   "quote": "62 linear inches and up to 40lb"
+  },
+  {
+   "id": "frontier-over",
+   "url": "https://www.flyfrontier.com/travel/travel-info/bag-options/",
+   "quote": "Bags weighing 41-50 pounds will be charged $75 per bag, per direction. For bookings made prior to April 4, 2026, bags weighing 51-99.99 pounds will be charged $100 per bag, per direction; for bookings made on or after April 4, 2026, bags weighing 51-99.99 pounds will be charged $129 per bag."
+  },
+  {
+   "id": "allegiant-personal-quote",
+   "url": "https://www.allegiantair.com/popup/optional-services-fees",
+   "quote": "8 in. x 14 in. x 18 in. (20 cm x 35 cm x 45 cm) maximum"
+  },
+  {
+   "id": "allegiant-carry-quote",
+   "url": "https://www.allegiantair.com/popup/optional-services-fees",
+   "quote": "10 in. x 16 in. x 22 in. (25 cm x 40 cm x 55 cm) maximum"
+  },
+  {
+   "id": "allegiant-carry-quoteFee",
+   "url": "https://www.allegiantair.com/popup/optional-services-fees",
+   "quote": "Carry-on Bag $10.00 to $75.00"
+  },
+  {
+   "id": "allegiant-checked-quote",
+   "url": "https://www.allegiantair.com/popup/optional-services-fees",
+   "quote": "80 in. (203cm) in height + width + length maximum Each checked bag can weight up to 50lbs (22 kilos)."
+  },
+  {
+   "id": "allegiant-over",
+   "url": "https://www.allegiantair.com/popup/optional-services-fees",
+   "quote": "Overweight Bag - 51 to 70 lbs (23.1 to 31.8 kilos) add $50.00 Overweight Bags - 71 to 100 lbs (32.2 to 45.4 kilos) add $75.00"
+  },
+  {
+   "id": "hawaiian-personal-quote",
+   "url": "https://www.hawaiianairlines.com/content/travel-info/baggage/carry-on-luggage",
+   "quote": "One small personal item such as a purse, briefcase, or laptop bag, and medically necessary items will be allowed on board."
+  },
+  {
+   "id": "hawaiian-carry-quote",
+   "url": "https://www.hawaiianairlines.com/content/travel-info/baggage/carry-on-luggage",
+   "quote": "One piece of carry-on sized luggage (maximum dimension 22\" x 14\" x 9\" or 45 linear inches, including wheels and handle) will be allowed free of charge."
+  },
+  {
+   "id": "hawaiian-checked-quote",
+   "url": "https://www.hawaiianairlines.com/content/travel-info/baggage/checked-bags",
+   "quote": "North America | $45 USD Up to 50 lbs. and 62 linear inches | $55 USD Up to 50 lbs. and 62 linear inches"
+  },
+  {
+   "id": "hawaiian-checked-quoteInterIsland",
+   "url": "https://www.hawaiianairlines.com/content/travel-info/baggage/checked-bags",
+   "quote": "Passengers traveling wholly in the state of Hawaii | Free | $30 USD | $40 USD | $50 USD | $50 USD per bag | $35 USD per bag | $70 USD per bag | $35 USD per bag"
+  },
+  {
+   "id": "hawaiian-checked-quoteThird",
+   "url": "https://www.hawaiianairlines.com/content/travel-info/baggage/checked-bags",
+   "quote": "Standard bag | Free | $45 USD | $55 USD | $200 USD | $200 USD per bag | $100 USD per bag | $200 USD per bag | $200 USD per bag"
+  },
+  {
+   "id": "hawaiian-over",
+   "url": "https://www.hawaiianairlines.com/content/travel-info/baggage/checked-bags",
+   "quote": "Standard bag | Free | $45 USD | $55 USD | $200 USD | $200 USD per bag | $100 USD per bag | $200 USD per bag | $200 USD per bag"
+  },
+  {
+   "id": "ryanair-smallBag",
+   "url": "https://www.ryanair.com/gb/en/useful-info/help-centre/terms-and-conditions",
+   "quote": "Each passenger can take one small item of carry-on baggage (up to 40 x 30 x 20 cm) on the plane with them. Our small bag sizers measure 42cm x 20cm x 30cm."
+  },
+  {
+   "id": "ryanair-cabinBag",
+   "url": "https://www.ryanair.com/gb/en/useful-info/help-centre/terms-and-conditions",
+   "quote": "Passengers who have booked Priority & 2 Cabin Bags (including those with a Regular or Flexi Plus ticket, and those who purchased a Plus ticket prior to 11 December 2019) can take a small carry-on bag (up to 40 x 30 x 20 cm) and a large item of carry-on baggage (weighing up to 10kg with maximum dimensions of 55cm x 40cm x 20cm) on the plane with them"
+  },
+  {
+   "id": "ryanair-hold",
+   "url": "https://www.ryanair.com/gb/en/useful-info/help-centre/terms-and-conditions",
+   "quote": "Each passenger can check in up to three items of luggage weighing up to 20kg each"
+  },
+  {
+   "id": "ryanair-fee-Priority & 2 Cabin B",
+   "url": "https://www.ryanair.com/gb/en/useful-info/help-centre/fees",
+   "quote": "Priority & 2 Cabin Bags Pricing between €/£12.49-€/£36 €/£19.99- €/£45.50 Fee varies depending on the route and travel dates selected."
+  },
+  {
+   "id": "ryanair-fee-10kg Check-in Bag",
+   "url": "https://www.ryanair.com/gb/en/useful-info/help-centre/fees",
+   "quote": "10kg Check-in Bag Pricing between €/£10.49 - €/£44.99 €/£24.00 - €/£75 Fee varies depending on the route and travel dates selected. Non-priority customers who have not added a bag to their booking can still purchase a 10kg Check-in bag at the airport bag drop desk for €/£35.99."
+  },
+  {
+   "id": "ryanair-fee-10kg Check-in Bag bo",
+   "url": "https://www.ryanair.com/gb/en/useful-info/help-centre/fees",
+   "quote": "Non-priority customers who have not added a bag to their booking can still purchase a 10kg Check-in bag at the airport bag drop desk for €/£35.99."
+  },
+  {
+   "id": "ryanair-fee-20kg Check-in Bag",
+   "url": "https://www.ryanair.com/gb/en/useful-info/help-centre/fees",
+   "quote": "20kg Check-in Bag Minimum and maximum charges per item per flight when bought online €/£21.49 - €/£59.99 (per flight) €/£39.99 - €/£75 (per flight)"
+  },
+  {
+   "id": "ryanair-fee-20kg Check-in Bag bo",
+   "url": "https://www.ryanair.com/gb/en/useful-info/help-centre/fees",
+   "quote": "Passengers who have not added a bag to their booking can still purchase a 20kg Check-in bag at the airport bag drop desk for €/£59.99."
+  },
+  {
+   "id": "ryanair-fee-23kg Check-in bag",
+   "url": "https://www.ryanair.com/gb/en/useful-info/help-centre/fees",
+   "quote": "23kg Check-in bag €/£ 28.99 - €/£ 80.99 (per flight) €/£ 54 - €/£ 97 (per flight)"
+  },
+  {
+   "id": "easyjet-smallBag",
+   "url": "https://www.easyjet.com/en/help/baggage/cabin-bag-and-hold-luggage",
+   "quote": "Everyone can bring one small under seat cabin bag per person on board for free. It can be a maximum size of 45 x 36 x 20 cm (including any handles and wheels) and must be kept under the seat in front of you. Your bag can weigh up to 15kg, but we do ask that you’re able to lift and carry it yourself."
+  },
+  {
+   "id": "easyjet-cabinBag",
+   "url": "https://www.easyjet.com/en/help/baggage/cabin-bag-and-hold-luggage",
+   "quote": "One large cabin bag Maximum size 56 x 45 x 25 cm (including any handles and wheels) Includes items like a trolley case and larger rucksack, but please check dimensions Needs to fit in an overhead locker Maximum weight 15kg."
+  },
+  {
+   "id": "easyjet-hold",
+   "url": "https://www.easyjet.com/en/help-centre/policy-terms-and-conditions/fees-charges",
+   "quote": "Hold bags can be purchased in advance of your flight, weighing up to 15kg, 23kg, 26kg, 29kg or 32kg."
+  },
+  {
+   "id": "easyjet-fee-Large cabin bag (pre",
+   "url": "https://www.easyjet.com/en/help-centre/policy-terms-and-conditions/fees-charges",
+   "quote": "Fees vary with demand, route, flight date and time of booking. You’ll see exact price at time of purchase."
+  },
+  {
+   "id": "easyjet-fee-Large cabin bag at t",
+   "url": "https://www.easyjet.com/en/help-centre/policy-terms-and-conditions/fees-charges",
+   "quote": "£60 - at the boarding gate"
+  },
+  {
+   "id": "easyjet-fee-Hold bag (pre-booked",
+   "url": "https://www.easyjet.com/en/help-centre/policy-terms-and-conditions/fees-charges",
+   "quote": "Hold luggage Charged per item, per flight Fees vary with demand, route, flight date and time of booking."
+  },
+  {
+   "id": "easyjet-fee-Hold bag at bag drop",
+   "url": "https://www.easyjet.com/en/help-centre/policy-terms-and-conditions/fees-charges",
+   "quote": "£60 - at bag drop desk"
+  },
+  {
+   "id": "easyjet-fee-Additional weight fo",
+   "url": "https://www.easyjet.com/en/help-centre/policy-terms-and-conditions/fees-charges",
+   "quote": "Additional weight for pre-booked hold luggage up to a maximum of 32kg per item, per flight Up to £15 per 3kg"
+  },
+  {
+   "id": "jet2-smallBag",
+   "url": "https://www.jet2.com/en/baggage",
+   "quote": "You can also bring a small, under-seat bag onboard (such as a handbag, laptop bag or airport purchase), as long as it doesn't exceed 40 x 30 x 20cm in size and can be placed underneath the seat in front of you."
+  },
+  {
+   "id": "jet2-cabinBag",
+   "url": "https://www.jet2.com/en/baggage",
+   "quote": "You can take one piece of hand luggage onboard free of charge, as long as it weighs no more than 10kg and is no larger than 56cm x 45cm x 25cm (including wheels and handles)."
+  },
+  {
+   "id": "jet2-hold",
+   "url": "https://www.jet2.com/en/baggage",
+   "quote": "You can add up to three 22kg bags per person per flight (excluding infants)."
+  },
+  {
+   "id": "jet2-fee-22kg hold bag",
+   "url": "https://www.jet2.com/en/baggage",
+   "quote": "Yes, you can book up to three 22kg hold bags per person, per flight (excluding infants) by paying the applicable charges."
+  },
+  {
+   "id": "british-airways-smallBag",
+   "url": "https://www.britishairways.com/content/information/baggage-essentials",
+   "quote": "Hand bag: 1 hand bag Max dimensions of 40 x 30 x 15cm (16 x 12 x 6in) Must easily fit under the seat in front of you"
+  },
+  {
+   "id": "british-airways-cabinBag",
+   "url": "https://www.britishairways.com/content/information/baggage-essentials",
+   "quote": "Cabin bag: 1 cabin bag Max dimensions of 56 x 45 x 25cm (22 x 18 x 10in) – including wheels and handles You must be able to lift your cabin bag into the overhead compartment unassisted"
+  },
+  {
+   "id": "british-airways-hold",
+   "url": "https://www.britishairways.com/content/information/baggage-essentials",
+   "quote": "1 bag checked into the hold Max dimensions up to 90 x 75 x 43cm (35 x 30 x 17in) Weight up to 23kg (50lb) per bag"
+  },
+  {
+   "id": "british-airways-fee-Extra checked bag (i",
+   "url": "https://www.britishairways.com/content/information/baggage-essentials",
+   "quote": "The cost of each extra hold bag depends on your destination and how many more bags you want to check in over your hold allowance."
+  },
+  {
+   "id": "wizz-air-smallBag",
+   "url": "https://wizzair.com/en-gb/help-centre/booking-information-and-services/baggage/baggage-allowance/cabin-baggage",
+   "quote": "Maximum dimensions of the carry-on bag: 40 x 30 x 20 cm. Maximum weight of the carry-on bag: 10 kg The carry-on bag must fit under the seat in front of you."
+  },
+  {
+   "id": "wizz-air-cabinBag",
+   "url": "https://wizzair.com/en-gb/help-centre/booking-information-and-services/baggage/baggage-allowance/cabin-baggage",
+   "quote": "The trolley bag is exclusively available as part of WIZZ Priority during the booking process"
+  },
+  {
+   "id": "wizz-air-hold",
+   "url": "https://wizzair.com/en-gb/help-centre/booking-information-and-services/baggage/baggage-allowance/checked-in-baggage",
+   "quote": "Maximum dimensions of the checked-in bag: 149 x 119 x 171 cm. Maximum weight of the checked-in bag: 10 kg, 20 kg, 26 kg, or 32 kg."
+  },
+  {
+   "id": "wizz-air-fee-WIZZ Priority / chec",
+   "url": "https://wizzair.com/en-gb/help-centre/booking-information-and-services/baggage/baggage-allowance/checked-in-baggage",
+   "quote": "Higher baggage fees do apply for any additional pieces of checked-in baggage purchased at the airport."
+  },
+  {
+   "id": "tui-smallBag",
+   "url": "https://www.tui.co.uk/destinations/info/luggage-allowance",
+   "quote": "You can also bring one small personal item or laptop, which must be stored under the seat in front of you."
+  },
+  {
+   "id": "tui-cabinBag",
+   "url": "https://www.tui.co.uk/destinations/info/luggage-allowance",
+   "quote": "Each piece of hand luggage can weigh up to 10kg, with maximum dimensions of 55x40x20cm."
+  },
+  {
+   "id": "tui-hold",
+   "url": "https://www.tui.co.uk/destinations/info/luggage-allowance",
+   "quote": "You'll get 20kg* luggage per person, or 25kg* if you've booked a TUI River Cruise, a TUI BLUE, a Sensatori by TUI BLUE or a Holiday Village holiday."
+  },
+  {
+   "id": "tui-fee-Flight-only checked ",
+   "url": "https://www.tui.co.uk/destinations/info/luggage-allowance",
+   "quote": "Short-haul flights: £60 or €70 per 15kg bag."
+  },
+  {
+   "id": "tui-fee-Flight-only checked ",
+   "url": "https://www.tui.co.uk/destinations/info/luggage-allowance",
+   "quote": "Cape Verde, Egypt, Gambia, Senegal and long-haul flights: £80 or €90 per 15kg bag."
+  },
+  {
+   "id": "virgin-atlantic-cabinBag",
+   "url": "https://help.virginatlantic.com/gb/en/baggage/hand-baggage.html",
+   "quote": "Hand baggage is included as part of all our tickets. The size of your bag needs to be a maximum of 23 x 36 x 56cm"
+  },
+  {
+   "id": "virgin-atlantic-hold",
+   "url": "https://help.virginatlantic.com/gb/en/baggage/check-in-baggage-allowance.html",
+   "quote": "Economy Classic and Delight One checked in bag* Maximum weight 23kg Maximum dimensions 90 x 75 x 43cm"
+  },
+  {
+   "id": "virgin-atlantic-fee-Bag 1 on Economy Lig",
+   "url": "https://help.virginatlantic.com/gb/en/baggage/check-in-baggage-allowance.html",
+   "quote": "Bag 1 65 GBP / 75 USD / 60 EUR"
+  },
+  {
+   "id": "virgin-atlantic-fee-Bag 2 beyond allowan",
+   "url": "https://help.virginatlantic.com/gb/en/baggage/check-in-baggage-allowance.html",
+   "quote": "Bag 2 65 GBP / 100 USD / 85 EUR"
+  },
+  {
+   "id": "virgin-atlantic-fee-Bag 3 and 4",
+   "url": "https://help.virginatlantic.com/gb/en/baggage/check-in-baggage-allowance.html",
+   "quote": "Bag 3 140 GBP / 200 USD / 240 EUR"
+  },
+  {
+   "id": "virgin-atlantic-fee-Oversized bag (over ",
+   "url": "https://help.virginatlantic.com/gb/en/baggage/check-in-baggage-allowance.html",
+   "quote": "Oversized checked in bags will be £200 (or $300 US, €250 EUR) per item."
+  },
+  {
+   "id": "ap-lhr",
+   "url": "https://www.heathrow.com/at-the-airport/security-and-baggage/hand-baggage-and-liquids",
+   "quote": "You can carry liquids in containers of up to 2 litres through security at Heathrow. This applies at Terminals 2, 3, 4 and 5. Leave liquids in your cabin bag when you go through security. You don't need to remove them for screening."
+  },
+  {
+   "id": "ap-lgw",
+   "url": "https://www.gatwickairport.com/passenger-guides/security.html",
+   "quote": "Liquids can now be brought through security in containers of up to two litres, provided they are not in metal or double walled containers, these still need to be emptied prior to going through security. All other liquids can stay inside your hand luggage when passing through security."
+  },
+  {
+   "id": "ap-stn",
+   "url": "https://www.stanstedairport.com/help/security/",
+   "quote": "You can pack liquids in your hand luggage, as long as each liquid is under 100ml . These can be left in your hand luggage during the Security search."
+  },
+  {
+   "id": "ap-ltn",
+   "url": "https://www.london-luton.co.uk/inside-lla/security",
+   "quote": "Liquids and large electronics can now stay in your bag. You don’t need a plastic bag for your liquids anymore, and you don’t need to remove them from your luggage. Our CT scanners now scan liquids and electronics inside your bag."
+  },
+  {
+   "id": "ap-man",
+   "url": "https://www.manchesterairport.co.uk/help/security/",
+   "quote": "You can pack liquids, gels, and aerosols under 100ml each in your hand luggage. Liquids under 100ml no longer need to be in a plastic bag and can be left in your hand luggage."
+  },
+  {
+   "id": "ap-bhx",
+   "url": "https://www.birminghamairport.co.uk/important-updates-customer-advice-on-liquids-when-travelling-out-of-birmingham-airport/",
+   "quote": "Only liquids, pastes and gels in containers no more than 2 litres (2L) can be carried in hand luggage – anything larger needs to be in checked in luggage."
+  },
+  {
+   "id": "ap-edi",
+   "url": "https://www.edinburghairport.com/prepare/airport-security/liquids-food-items-electricals",
+   "quote": "You can now bring through up to two litres of liquids through security. Liquids can stay in your bag - there's no longer any need to remove these. You can bring multiple containers, as long as the containers are up to two litres."
+  },
+  {
+   "id": "ap-brs",
+   "url": "https://www.bristolairport.co.uk/at-the-airport/security/",
+   "quote": "The current maximum size of each liquid container at Bristol Airport is 2 litres. Keep your liquids in your bag (there's no need to use a clear plastic bag)."
+  },
+  {
+   "id": "ap-ncl",
+   "url": "https://www.newcastleairport.com/at-the-airport/security-faqs/",
+   "quote": "Newcastle International Airport has installed new screening technology that allows passengers to leave electrical items such as tablets and laptops, and liquids in their hand baggage during the screening process."
+  },
+  {
+   "id": "ap-abz",
+   "url": "https://www.aberdeenairport.com/aberdeen-airport-guide/airport-security/hand-baggage/",
+   "quote": "Liquids under 100ml can stay in your cabin baggage without using a liquid bag, with no restriction on how many 100ml containers you bring."
+  },
+  {
+   "id": "ap-bfs",
+   "url": "https://www.belfastairport.com/airport-guide/security/hand-luggage",
+   "quote": "Preparing for security at Belfast International Airport, our new technology allows passengers to leave all electronics and liquids up to 2 litres in their hand luggage speeding up the security process and improving the overall passenger experience. Passengers should note that all electronic equipment; laptops, phones etc can now be left in their hand luggage.  Plastic bags are no longer required."
+  },
+  {
+   "id": "ap-lcy",
+   "url": "https://www.londoncityairport.com/at-the-airport/need-to-know/security-baggage",
+   "quote": "Speed through security: leave your liquids in your bag, and please make sure they are 100ml or less."
+  },
+  {
+   "id": "ap-lba",
+   "url": "https://www.leedsbradfordairport.co.uk/help/security",
+   "quote": "Keep liquids and electronics in your hand luggage. Liquids/gels must be in containers of 100ml or less."
+  },
+  {
+   "id": "ap-lpl",
+   "url": "https://www.liverpoolairport.com/prepare/security/baggage-information",
+   "quote": "Liquids in containers of 100ml or less are permitted to remain in your hand luggage without the need of a clear plastic bag."
+  },
+  {
+   "id": "ap-ema",
+   "url": "https://www.eastmidlandsairport.com/help/security/",
+   "quote": "You can pack liquids, gels and aerosols under 100ml each in your hand luggage. Liquids under 100ml no longer need to be in a plastic bag and can be left in your hand luggage."
+  },
+  {
+   "id": "ap-sou",
+   "url": "https://www.southamptonairport.com/at-the-airport/security-screening/security-faqs/",
+   "quote": "No, there is no longer a requirement to place your liquids in a transparent, resealable plastic bag at Southampton Airport. You can pack your liquids directly in your hand luggage, making your journey through security faster and easier."
+  },
+  {
+   "id": "ap-mme",
+   "url": "https://www.teessideinternational.com/at-the-airport/preparing-for-security/",
+   "quote": "All liquids, gels and creams in hand luggage must be in containers of up to 100ml. Liquids in your hand luggage do not need to be placed in a plastic bag and do not need to be taken out of your bags prior to screening. There is no specified limit to the number of 100ml liquid containers that may be carried."
+  }
+ ]
+}
